@@ -1,17 +1,23 @@
 ## Welcome to Libraries.io
 Libraries.io is an open and inclusive [community of people](/contributors.md) working together to improve the quality of all software and to raise the level of contribution to free and open source software.
 
-This page contains guidance for contributors and documention for the libraries.io project as a whole
+Here you'll find guidance for contributors and documention for the libraries.io project as a whole.
 
 ## Assumptions
-Documentation for Libraries.io makes the following assumptions:
+We have made the following assumptions in our guidance and documentation:
 
 * that the reader has a basic understanding of the collaborative coding platform [GitHub](https://help.github.com/),
-* that the reader has a working understnading of the distributed revision control system [Git](https://git-scm.com/docs/gittutorial),
+* that the reader has a working understanding of the distributed revision control system [Git](https://git-scm.com/docs/gittutorial),
 * that the reader is able to communicate, in writing, in Englsh. 
 
-## Contributing to Libraries.io
-If you wish to contribute to Libraries.io must agree to our [contributor terms](/CONTRIBUTORS.md). In short they say: be excellent to one another. You may also want to check out our [philosophy and values](values.md)
+## How can I help?
+If you wish to contribute to Libraries.io must agree to our [contributor terms](/CONTRIBUTORS.md). In short they say: be excellent to one another. If you're able to abide by those termsthen check out our [contributors handbook](contributorshandbook.md).
+
+
+## Improving this Document
+You can view the source for this page and the rest of our documentation [on GitHub](https://github.com/librariesio/documentation). You can also view, comment upon and create new issues concerning this documentation [on our issue tracker](https://github.com/librariesio/documentation). For more information about contributing to libraries.io please read our [contributor handbook](/contributorhandbook.md).
+
+
 
 ### How can I help?
 We use GitHub to manage our workflow. This all begins with a ticket in our [issue tracker](http://github.com/librairesio/issues). Tickets reflect a bug, a feature or a request, many of which are open to for you to tackle. We use labels to tag issues by size, type and skills needed. We specifically tag issues that are perfect for first time contributors with `first-pr`. Check out our [labelling policy](labelling.md) to find out what's right for you. 
@@ -22,8 +28,8 @@ If you are still unsure what to work on then you might want to familiarise yours
 ### How can I get some support from the community?
 If you are stuck then get in touch with other contributors by ostarting a conversation in our open [chat on slack](http://slack.libraries.io) or [joining one of our weekly, open calls](howwework.md)
 
-### What key decisions have we made that might impact my contributions?
-We have made a very small number of decisions regarding the development of libraries.io which are specifcally stated in our strategy.
+### What key decisions have been made that might impact my contributions?
+We have made a very small number of decisions regarding the development of libraries.io which are specifcally stated [in our strategy](/strategy.md).
 
 ### What does the contributor workflow look like?
 
@@ -45,6 +51,3 @@ TODO
 ### More Resources
 
 TODO
-
-## Improving this Document
-You can view the source for this page and the rest of our documentation [on GitHub](https://github.com/librariesio/documentation). You can also view, comment upon and create new issues concerning this documentation [on our issue tracker](https://github.com/librariesio/documentation). For more information about contributing to libraries.io please read our [pcontributor handbook](http://example.org).
