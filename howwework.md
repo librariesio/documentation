@@ -56,11 +56,11 @@ Libraries.io is predominantly a software application. Most of the contributions 
 
 In general we use [GitHub](https://help.github.com/) and [Git](https://git-scm.com/docs/gittutorial) to support our workflow. If you are unfamiliar with those tools then you should check them out until you feel you have a basic understanding of GitHub and a working understanding of Git. Specifcally you should understand how forking, branching, committing, PRing and merging works. 
 
-### Forking
+#### Forking
 We prefer that contributors fork the project in order to contribute to 'upstream'. This builds in redundancy (there will be many copies of libraries.io) and allows others to build upon the value our comminity has created, taking it in their own direction if desired. 
 
-### Branching 
-We *try* to use principles of [GitHub-flow](https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/) in our branching model. That is the `master' branch will always be deployable to the live site, and that every branch from that will be used to add a feature, fix a bug, improve something or otherwise represent an atomic unit of work. 
+#### Branching 
+We *try* to use principles of [GitHub-flow](https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/) in our branching model. That is the `master` branch will always be deployable to the live site, and that every branch from that will be used to add a feature, fix a bug, improve something or otherwise represent an atomic unit of work. 
 
 #### Ticketing
 We *try* to ticket everything that is worth a member of the community contributing to. That is any feature, bug, concept, view or revelation that is worth an open, focussed and documented discussion. This includes things like 'should we add a feature that produces a leaderboard of people in open source?' (the answer is no) but not 'where can I find the documentation for ticketing?'. Questions are for our chatroom, a video call or as a last resort the [support repo](http://github.com/librariesio/support). We use [templates](http://github.com/librariesio/awesome-github-templates) to guide contributors toward good practice.
@@ -86,7 +86,7 @@ It is likely that your contributions will need to be checked by at least one mem
 For reviewers: we appreciate that it may be difficult to offer constructive criticism, but it is a necessary part of ensuring the project is maintainable and successful. If it is difficult to understand something, request it is better commented. If you do not feel assured of the robustness of a contribution, request it is better tested. If it is unclear what the goal of the peice of work is and how it relates to the [strategy](/strategy.md), request a clarification in the corresponding ticket. If a pull-request has no corresponding ticket, decreases code coverage or otherwise decreases the quality of the project. Reject it. Otherwise, merge it. 
 
 #### Merging
-As we keep the `master' branch in a permenent state of 'deployment ready' once-merged your contribution will be live on the next deployment. 
+As we keep the `master` branch in a permenent state of 'deployment ready' once-merged your contribution will be live on the next deployment. 
 #### Deploying 
-Any member of the [deployers](/deployers.md) team are able to redeploy the site. If you require a deployment then you might find one of them in our `#general' [chat channel on Slack](slack.libraries.io). 
+Any member of the [deployers](/deployers.md) team are able to redeploy the site. If you require a deployment then you might find one of them in our `#general` [chat channel on Slack](slack.libraries.io). 
 
