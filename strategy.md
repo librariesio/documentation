@@ -30,6 +30,6 @@ The free and open source ecosystem has grown almost exponentially over the last 
 
 By highlighting libraries that are undevalued and undersupported, to those who will directly benefit from their contributing, we can increase the number of contributors to these projects. Our hope is that by focussing search and by creating tools to help maintainers and producers we can turbo-charge contributors and contributions. 
 
-### What we won't do
-We do not believe that profiling any one producer, maintainer, contributor or consumer will benefit the ecosystem. Life is not a casino and the richest person in the room is rarely the most satisfied. 
+## What We Won't Do
+We do not believe that profiling any one individual will benefit the ecosystem. People predominantly commit their time to free and open source software on a voluntary basis. With that in mind everyone who does so should be considered, regarded and thanked equally. 
 
