@@ -4,15 +4,22 @@ Thanks for considering conributing :heart: These guidelines outline how to contr
 ## Table of Contents
 [What is Libraies.io all about?](#whats-librariesio-about)
 [What should I know Beofre I get started?](#what-should-i-know-before-i-get-started)
-* [Code of conduct]()
-* [Langauge]()
-* [Installation and setup]()
+* [Code of conduct](#code-of-conduct)
+* [Langauge](#langauge)
+* [Installation and setup](#setup)
+
 [How can I contribute?](#how-can-i-contribute)
-* [Reporting bugs]()
-* [Suggesting enhancements]()
-* [Suggesting a new feature]()
-* [Tackling something meatier]()
+* [Reporting bugs](#reporting-bugs)
+* [Suggesting enhancements](#suggesting-enhancements)
+* [Suggesting a new feature](#suggesting-new-features)
+* [Your first contribution](#your-first-contribution)
+* [Tackling something meatier](#tackling-something-meatier)
+
 [How can I talk to other contributors?](#how-can-i-talk-to-other-contributors)
+* [Chat](#chat)
+* [Video](#video)
+* [Social media](#twitter)
+
 [Our workflow](#workflow)
 
 
