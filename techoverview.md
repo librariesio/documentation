@@ -1,6 +1,8 @@
 ## Technical Overview
 Libraries.io is made up of many smaller projects that work together to keep the [https://libraries.io](https://libraries.io) site running. The following diagram provides a high-level overview: 
 
+![Overview of Libraries.io archiitecture](https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png "Libraries.io Architecture")
+
 The main repositories are:
 
 ### Core
