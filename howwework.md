@@ -2,7 +2,19 @@
 Thanks for considering conributing :heart: These guidelines outline how to contribute to the [Libraries.io](http://github.com/librariesio) project. 
 
 ## Table of Contents
-TODO
+[What is Libraies.io all about?](#whats-librariesio-about)
+[What should I know Beofre I get started?](#what-should-i-know-before-i-get-started)
+* [Code of conduct]()
+* [Langauge]()
+* [Installation and setup]()
+[How can I contribute?](#how-can-i-contribute)
+* [Reporting bugs]()
+* [Suggesting enhancements]()
+* [Suggesting a new feature]()
+* [Tackling something meatier]()
+[How can I talk to other contributors?](#how-can-i-talk-to-other-contributors)
+[Our workflow](#workflow)
+
 
 ## What's Libraries.io About?
 _Our goal is to raise the quality of all software._ 
