@@ -2,7 +2,7 @@
 Thanks for considering conributing :heart: These guidelines outline how to contribute to the [Libraries.io](http://github.com/librariesio) project. 
 
 ## Table of Contents
-[What is Libraies.io all about?](#whats-librariesio-about)
+[What is Libraries.io all about?](#whats-librariesio-about)
 [What should I know Beofre I get started?](#what-should-i-know-before-i-get-started)
 * [Code of conduct](#code-of-conduct)
 * [Langauge](#langauge)
