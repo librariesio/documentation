@@ -1,8 +1,6 @@
 ## Labelling 
 Labelling is a key part of our workflow. We label issues by size, type or skills needed and drive parts of our process using them. Specificly we label tickets that are ideal for first time contributors or those that are part of our funded commitments. 
 
-We will enforce this policy to ensure that new contributors and existing contributors alike are as productive and efficient with their time as possible. This may include modifying labels or rejecting a ticket if is does not comply with the following:
-
 ### Size
 In the following *day* and *week* mean 'working approximately 7.5 hours per day, five days a week'. That is not to say any contributor is expected to work full-time on the project, but it should provide a truer sense of scale. 
 
@@ -17,13 +15,13 @@ Projects typically indicate the type of issue, but we would like to be more expl
 
 * `API` are issues regarding our own API. 
 * `content` these isssues require a little word-smithing of new or existing copy. This might be grammar, phrasing, voicing or similar types of issue.
-* 'design' is for pure design. This might involde the creation of assets like logos, fonts, illustrations or it may be in support of frontend or UX issues. 
+* `design` is for pure design. This might involde the creation of assets like logos, fonts, illustrations or it may be in support of frontend or UX issues. 
 * `dependency parsing` in order to understand the relationships between libraries, their constituent components, and the projects they're included within, we have to parse dependency manifests. Sometimes these manifests require compilation, typically in the language or framework itself.
 * `documentation` If an issue requires changes or clarification to our documentation (READMEs, wiki, code comments, etc.) then it will be marked with this label. These issues normally do not pertain to code changes and are ideal for those who don't necessarily want to get their hands dirty with code.
 * `frontend` This relates to visual elements of the site that could be improved or are broken. This may be as simple as a change to a CSS colour or font size but may stretch all the way to things that do not render as expected on mobile devices. These are usually good issues for people with front-end development experience to tackle.
-* 'registry' Libraries.io gets it's data by scraping registries like package managers. Support for new registries or issues with current registries will be tagged with this label. 
+* `registry` Libraries.io gets it's data by scraping registries like package managers. Support for new registries or issues with current registries will be tagged with this label. 
 * `research` in order to progress an issue or idea we may need more information about our own site, our users or more context regarding a problem for other sources. Any issue that needs a reasonable amount of information gathering will be tagged research. 
-* `security` If you spot an issue related to security issues (e.g. invalid SSL certs, potential CSRF issues), mark it with this label. Don't forget to be a good OSS citizen and always report zero-day issues through a private channel to minimise impact to your fellow users!
+* `security` If you spot an issue related to security issues (e.g. invalid SSL certs, potential CSRF issues), mark it with this label. Always report zero-day issues through to zeroday@libraries.io to minimise impact to your fellow users!
 * `sysops` is an issue about the automation and safe running of the environment on which the project runs. 
 * `UX` These issues relate to how the site works, or more holistically, how the site *feels* to the end user, and will normally be related to the front-end of the website. These issues might typically relate to confusion stemming from navigation, form elements, input validation, or breaks in user flows.
 
@@ -47,7 +45,7 @@ Projects typically indicate the type of issue, but we would like to be more expl
 * `needs rebase` You will find this label normally attached to pull requests, and means that the maintainers would like to you squash commits or rebase existing commits from master into your branch before we can merge your pull request. A maintainer will clarify this in the comment thread.
 * `question` Issues can be marked with this label by anybody who would like other contributors or maintainers to answer a specific question before an issue can be closed. These normally do not assume any skill level (although may sometimes require maintainers to have the final say on them) and are great opportunities for all members of our community to steer the direction of the project.
 * `refactoring` If an issue requires code to be refactored before a particular change can be made, or if you spot inelegant patterns or implementations in code that you feel could be better, then feel free to add this label to an issue. If the issue is the latter type, please be careful about the language you use in these threads. For example, things like "this code sucks!" or "you must be an idiot!" are unacceptable!. Programmers have feelings too and there are ways to suggest code changes without insulting people!
-*`wontfix` This means that, after considering your issue in full, your issue is outside of [the intended scope of the project](/strategy.md) and is not something we'd like to add to the codebase right now or in the future. These are used sparingly and are intended to be rare, and are never used without reasoned justification.
+* `wontfix` This means that, after considering your issue in full, your issue is outside of [the intended scope of the project](/strategy.md) and is not something we'd like to add to the codebase right now or in the future. These are used sparingly and are intended to be rare, and are never used without reasoned justification.
 
 ### Optional
 If you are a [committer](/committer.md) you may wish to consider adding the following labels, but they will not be enforced:
