@@ -4,7 +4,7 @@ Libraries.io is made up of many smaller projects that work together to keep the 
 
 ![Overview of Libraries.io archiitecture](https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png "Libraries.io Architecture")
 
-Everything in Libraries.io begins with [package managers](https://github.com/librariesio/libraries.io/wiki/Package-Managers), on a regular basis background tasks find new or updated libraries from each of those packages managers, libraries cannot be added to the system unless they exist on one of those package managers.
+Everything in Libraries.io begins with [package managers](/packagemanagers.md), on a regular basis background tasks find new or updated libraries from each of those packages managers, libraries cannot be added to the system unless they exist on one of those package managers.
 
 Each library is stored in the [Project](https://github.com/librariesio/libraries.io/blob/master/app/models/project.rb) table, if that library's package manager supports published version numbers each new version is stored in the [Version](https://github.com/librariesio/libraries.io/blob/master/app/models/version.rb) table and if the package manager supports library dependencies then they are recorded in the [Dependency](https://github.com/librariesio/libraries.io/blob/master/app/models/dependency.rb) table.
 
