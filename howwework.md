@@ -142,8 +142,7 @@ If it possible to comment your contribution — for instance if you are contribu
 When committing to a branch be sure to use plain, simple language that describes the incremental changes made on the branch toward the overall goal. Avoid unnecessary complexity. Simplify whenever possible. Assume a reasonable but not comprehensive knowledge of the tools, techniques and context of your work. 
 
 #### Testing 
-
-TODO
+When adding or fixing functionality, tests should be added to help reduce future regressions and breakage. All tests are ran automatically when new commits are pushed to a branch. Pull requests with broken/missing tests are not likely to be merged.
 
 #### Submitting for Review
 Once a piece of work (in a branch) is complete it should be readied for review. This is your last chance to ensure that your contribution is [properly tested](#testing). If you are contributing code it is likely your contribution will be rejected if it would lower the test-coverage. Once this is done you can submit a pull-request following the [template](/templates.md).
