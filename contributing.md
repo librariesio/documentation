@@ -1,5 +1,5 @@
-## Contributing to Libraries.io
-Thanks for considering contributing :heart:. These guidelines outline how to contribute to the [Libraries.io](http://github.com/librariesio) project. 
+## Contributing to Libraries.io :heart:
+Thanks for considering contributing. These guidelines outline how to contribute to the [Libraries.io](http://github.com/librariesio) project. 
 
 ## Table of Contents
 [What is Libraries.io all about?](#whats-librariesio-about)
@@ -130,7 +130,7 @@ In general we use [GitHub](https://help.github.com/) and [Git](https://git-scm.c
 #### Forking
 We prefer that contributors fork the project in order to contribute.
 
-#### Branching 
+#### Branching 
 We *try* to use principles of [GitHub-flow](https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/) in our branching model. That is the `master` branch will always be deployable to the live site, and that every branch from that will be used to add a feature, fix a bug, improve something or otherwise represent an atomic unit of work. 
 
 #### Ticketing
