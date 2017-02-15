@@ -1,5 +1,5 @@
 ## Contributing to Libraries.io
-Thanks for considering conributing :heart: These guidelines outline how to contribute to the [Libraries.io](http://github.com/librariesio) project. 
+Thanks for considering contributing :heart:. These guidelines outline how to contribute to the [Libraries.io](http://github.com/librariesio) project. 
 
 ## Table of Contents
 [What is Libraries.io all about?](#whats-librariesio-about)
