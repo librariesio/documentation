@@ -22,7 +22,7 @@ If you'd like to know more about why we think this is the right approach then ch
 ## How Can I Help?
 If you wish to contribute to Libraries.io must agree to our [contributor terms](/CONTRIBUTORS.md). In short they say: be excellent to one another. If you're able to abide by those terms then check out our [contributor's handbook](CONTRIBUTING.md).
 
-### How Does Libraries.io Work?
+## How Does Libraries.io Work?
 
 Libraries.io collects meta-data about software and the frameworks, plugins and tools they depend upon which we collectively call libraries.
 
