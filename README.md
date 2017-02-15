@@ -1,5 +1,5 @@
 ## Welcome to Libraries.io :tada:
-Here you'll find guidance for contributors and documentation for the libraries.io project as a whole.
+Here you'll find guidance for contributors and documentation for the Libraries.io project as a whole.
 
 ## Assumptions
 We have made the following assumptions in our guidance and documentation:
