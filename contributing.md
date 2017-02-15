@@ -52,9 +52,9 @@ The simplest thing that you can do to help us is by filing good bug reports, so 
 #### Before Submitting a Bug Report
 
 * Double-check that the bug is persistent. The site is still in it's infancy and sometimes artifacts may appear and disappear. 
-* Double-check the bug hasn't already been reported [on our issue tracker](https://github.com/librariesio/libraries.io/issues), they *should* be labelled `bug` or `bugsnag`.
+* Double-check the bug hasn't already been reported [on our issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they *should* be labelled `bug` or `bugsnag`.
 
-If something hasn't been raised, you can go ahead and create a new issue using the template. If you'd like to help investigate further or fix the bug just mention it in your issue and check out our [workflow](#workflow).
+If something hasn't been raised, you can go ahead and create a new issue using [the template](/ISSUE_TEMPLATE.md). If you'd like to help investigate further or fix the bug just mention it in your issue and check out our [workflow](#workflow).
 
 ### Suggesting Enhancements
 
@@ -63,9 +63,9 @@ The next simplest thing you can do to help us is by telling us how we can improv
 #### Before Submitting an Enhancement
 
 * Check that the enhancement doesn't already exist by checking the site or our [changelog](https://github.com/librariesio/libraries.io/blob/master/changelog.md)
-* Check that the enhancement is not already [in our issue tracker](https://github.com/librariesio/libraries.io/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+* Check that the enhancement is not already [in our issue tracker(https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be labelled 'enhancement'.
 
-If there isn't already an issue for feature then go ahead and create a new issue for it using the correct [template](/template.md). If you'd like to work on the enhancement then just mention it in a comment and check out our [workflow](#workflow).
+If there isn't already an issue for feature then go ahead and create a new issue for it using the [template](/ISSUE_TEMPLATE.md). If you'd like to work on the enhancement then just mention it in a comment and check out our [workflow](#workflow).
 
 ### Suggesting New Features
 
@@ -74,10 +74,10 @@ If you're into this zone then you need to understand a little more about what we
 #### Before Suggesting a Feature
 
 * Check that it aligns with [our strategy](strategy.md) and is specifically not in line with something we have said we will not do (for the moment this is anything to do with ranking *people*).
-* Check that the feature is not already [in our issue tracker](https://github.com/librariesio/libraries.io/issues?q=is%3Aissue+is%3Aopen+label%3Afeature)
+* Check that the feature is not already [in our issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be tagged 'feature'.
 * Specifically check that it is not already a [funded commitment](https://github.com/librariesio/supporters/issues).
 
-If you're still thinking about that killer feature that no one else is thinking about then *please* create an issue for it using the template.
+If you're still thinking about that killer feature that no one else is thinking about then *please* create an issue for it using the [template](/ISSUE_TEMPLATE.md).
 
 ### Your First Contribution
 You're in luck! We label issues that are ideal for first time contributors with [`first-pr`](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Alibrariesio+label%3A%22first-pr%22). For someone who wants something a little more meaty you might find an issue that needs some assistance with [`help wanted`](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Alibrariesio+label%3A%22help+wanted%22). Next you'll want to read our [workflow](#workflow).
@@ -108,7 +108,7 @@ Members are encouraged to openly discuss their work, their lives, share views an
 [Google Hangouts](http://hangouts.google.com) is our preferred tool for video chat. We operate an [open hangout](http://bit.ly/2kWtYak) for anyone to jump into at any time to discuss issues face to face. 
 
 ### Regular updates
-Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](github.com/librariesio/issues). 
+Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio). 
 
 Additionally we host an [open hangout](http://bit.ly/2kWtYak) for any contributor to join at *5pm UTC on a Tuesday* to discuss their work, the next week's priorities and to ask questions of other contributors regarding any aspect of the project. Again this is considered a *safe space* in which *there is no such thing as a stupid question*.
 
@@ -140,7 +140,7 @@ We *try* to create an issue for everything. That is any bug, feature or enhancem
 We constrain labels as they are a key part of our workflow. Tickets will be labeled according to our [labelling policy](/labelling.md).
 
 #### Templates
-We use [templates](/templates.md) to guide contributors toward good practice in filing bugs, requesting enhancements and features and in issuing pull-requests.
+We use templates to guide contributors toward good practice in [filing bugs, requesting enhancements and features](/ISSUE_TEMPLATE.md) and in [issuing pull-requests](PULL_REQUEST_TEMPLATE.md).
 
 #### Commenting
 If it possible to comment your contribution — for instance if you are contributing code — then do so in a way that is simple, clear, concise and lowers the level of understanding necessary for others to comprehend what comes afterward does or achieves. If you are contributing code it is very likely it will be rejected if it does not contain sufficient comments. 
@@ -152,7 +152,7 @@ When committing to a branch be sure to use plain, simple language that describes
 When adding or fixing functionality, tests should be added to help reduce future regressions and breakage. All tests are ran automatically when new commits are pushed to a branch. Pull requests with broken/missing tests are not likely to be merged.
 
 #### Submitting for Review
-Once a piece of work (in a branch) is complete it should be readied for review. This is your last chance to ensure that your contribution is [properly tested](#testing). If you are contributing code it is likely your contribution will be rejected if it would lower the test-coverage. Once this is done you can submit a pull-request following the [template](/templates.md).
+Once a piece of work (in a branch) is complete it should be readied for review. This is your last chance to ensure that your contribution is [properly tested](#testing). If you are contributing code it is likely your contribution will be rejected if it would lower the test-coverage. Once this is done you can submit a pull-request following the [template](/PULL_REQUEST_TEMPLATE.md).
 
 It is likely that your contributions will need to be checked by at least one member of the [core team](https://github.com/orgs/librariesio/teams/core) prior to merging. It is also incredibly likely that your contribution may need some re-work in order to be accepted. Particularly if it lacks an appropriate level of comments, tests or it is difficult to understand your commits. Please do not take offense if this is the case. We understand that contributors give their time because they want to improve the project but please understand it is another's responsibility to ensure that the project is maintainable, and good practices like these are key to ensuring that is possible. 
 
