@@ -62,7 +62,7 @@ The next simplest thing you can do to help us is by telling us how we can improv
 
 #### Before Submitting an Enhancement
 
-* Check that the enhancement is not already [in our issue tracker(https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be labelled 'enhancement' or 'feature'.
+* Check that the enhancement is not already [in our issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be labelled 'enhancement'.
 
 If there isn't already an issue for feature then go ahead and create a new issue for it using the [template](/ISSUE_TEMPLATE.md). If you'd like to work on the enhancement then just mention it in a comment and check out our [workflow](#workflow).
 
