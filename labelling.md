@@ -48,6 +48,6 @@ Projects typically indicate the type of issue, but we would like to be more expl
 * `wontfix` This means that, after considering your issue in full, your issue is outside of [the intended scope of the project](/strategy.md) and is not something we'd like to add to the codebase right now or in the future. These are used sparingly and are intended to be rare, and are never used without reasoned justification.
 
 ### Optional
-If you are a [committer](/committer.md) you may wish to consider adding the following labels, but they will not be enforced:
+If you are a [committer](https://github.com/orgs/librariesio/teams/committers) you may wish to consider adding the following labels, but they will not be enforced:
 
 * `language` indicates the *predominant* coding language needed to tackle an issue. It is likely to be `Ruby`, `JavaScript` or `HTML`. Yes, srcipting and markup langauges are considered languages for this purpose.
