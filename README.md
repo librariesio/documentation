@@ -29,7 +29,7 @@ Using the data collected we then calculate the [SourceRank](/sourcerank.md), thi
 If you'd like an in-depth technical overview, including a description of each of the repositories in the Libraries.io organisation and how they work together then check out our [technical overview](/techoverview.md).
 
 ## How Can I Help?
-If you wish to contribute to Libraries.io must agree to our [code of conduct](/CODE_OF_CONDUCT.md). In short they say: be excellent to one another. If you're able to abide by those terms then check out our [contributor's handbook](/contributing.md).
+If you wish to contribute to Libraries.io must agree to our [code of conduct](/CODE_OF_CONDUCT.md). In short they say: be excellent to one another. If you're able to abide by those terms then check out our [contributor's handbook](/contributorshandbook.md).
 
 ## Improving This Document
-You can view the source for this document and the rest of our documentation [on GitHub](https://github.com/librariesio/documentation). You can also view, comment upon and create new issues concerning this documentation [on our issue tracker](https://github.com/librariesio/documentation). For more information about contributing to Libraries.io please read our [contributor's handbook](/contributing.md).
+You can view the source for this document and the rest of our documentation [on GitHub](https://github.com/librariesio/documentation). You can also view, comment upon and create new issues concerning this documentation [on our issue tracker](https://github.com/librariesio/documentation). For more information about contributing to Libraries.io please read our [contributor's handbook](/contributorshandbook.md).
