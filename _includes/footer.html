@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+         License <a href="https://github.com/librariesio/documentation/blob/master/LICENSE.txt">aGPLv3 </a> containing <a href="https://github.com/wild-flame/jekyll-simple/blob/master/LICENSE">MIT</a>
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        {% if site.github_username %}
+        {% include icon-github.html username=site.github_username %}
+        {% endif %}
+        {% if site.twitter_username %}
+        {% include icon-twitter.html username=site.twitter_username %}
+        {% endif %}
+      </section>
+    </div>
+  </div>
+</footer>

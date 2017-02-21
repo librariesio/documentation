@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Technical Overview</title>
+  <meta name="description" content="Documentation for contributors to Libraries.io.
+">
+
+  <!-- evil icon -->
+
+  <link rel="stylesheet" href="/assets/evil-icons.min.css">
+  <script src="/assets/evil-icons.min.js"></script>
+
+  <!-- todo: include this into main.css -->
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/techoverview.html">
+</head>
+
+  <body>
+    <div class="page-content">
+      <div class="container">
+        <div class="three columns">
+          <header class="site-header">
+
+  <h2 class="logo"><a href="/">Libraries.io Documentation</a></h2>
+
+  <div class="nav">
+    
+    <label for="menu-toggle" class="menu-icon">
+        <!--div data-icon="ei-navicon"></div-->
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="site-nav">
+      <nav>
+        <ul class="page-link">
+          <li><a href="/">Welcome</a></li>
+          <li><a href="/strategy">Strategy</a></li>
+          <li><a href="/techoverview">Tech Overview</a></li>
+          <li><a href="/contributorshandbook">Contributing</a></li>
+          <li><a href="/labelling">Labelling</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+        </div>
+
+        <div class="nine columns" style="z-index:100;">
+          <div class="wrapper">
+            <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Technical Overview</h1>
+  </header>
+
+  <div class="article-content">
+    <h2 id="technical-overview">Technical Overview</h2>
+
+<p>Libraries.io is made up of many smaller projects that work together to keep the <a href="https://libraries.io">https://libraries.io</a> site running. The following diagram provides a high-level overview:</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png" alt="Overview of Libraries.io archiitecture" title="Libraries.io Architecture" /></p>
+
+<p>Everything in Libraries.io begins with <a href="/packagemanagers.html">package managers</a>, on a regular basis background tasks find new or updated libraries from each of those packages managers, libraries cannot be added to the system unless they exist on one of those package managers.</p>
+
+<p>Each library is stored in the <a href="https://github.com/librariesio/libraries.io/blob/master/app/models/project.rb">Project</a> table, if that library’s package manager supports published version numbers each new version is stored in the <a href="https://github.com/librariesio/libraries.io/blob/master/app/models/version.rb">Version</a> table and if the package manager supports library dependencies then they are recorded in the <a href="https://github.com/librariesio/libraries.io/blob/master/app/models/dependency.rb">Dependency</a> table.</p>
+
+<p>Libraries.io will then augment package manager data with data from GitHub if one is referenced in the package manager. GitHub repositories will be downloaded and stored in the <a href="https://github.com/librariesio/libraries.io/blob/master/app/models/github_repository.rb">GitHubRepository</a> table, on creation a background Sidekiq task is kicked off to download related information from GitHub including:</p>
+
+<ul>
+  <li><a href="https://github.com/librariesio/libraries.io/blob/master/app/models/readme.rb">Readme</a></li>
+  <li><a href="https://github.com/librariesio/libraries.io/blob/master/app/models/github_tag.rb">Git tags</a></li>
+  <li><a href="https://github.com/librariesio/libraries.io/blob/master/app/models/github_contribution.rb">Contributors</a></li>
+  <li>Owner (<a href="https://github.com/librariesio/libraries.io/blob/master/app/models/github_user.rb">GitHub user</a> or <a href="https://github.com/librariesio/libraries.io/blob/master/app/models/github_organisation.rb">GitHub Org</a>)</li>
+  <li>Source repository (if it’s a fork)</li>
+  <li><a href="https://github.com/librariesio/libraries.io/blob/master/app/models/manifest.rb">Dependency Manifests</a></li>
+</ul>
+
+<p>Some package managers that don’t have a concept of published versions (like Go and Bower), often they will fall back to using tags from a source repository if available, Libraries.io attempts to use GitHub tags as a fallback for all package managers that don’t provide version information.</p>
+
+<h2 id="licenses">Licenses</h2>
+
+<p>All license names are ran through the <a href="https://github.com/librariesio/spdx">SPDX</a> gem to normalize as many different ways of writing the name of standard licenses into a single version, which is then used for filtering within search and listing on https://libraries.io/licenses Licenses are stored as arrays on projects, as a library can have multiple licenses. If a project has a non-standard or commercial license it’s currently normalized to “Other” and is not indexed in search.</p>
+
+<p>GitHub repositories have one license stored against them if provided by the <a href="https://developer.github.com/v3/licenses/">GitHub license API</a>, if a library doesn’t have any license data from the package manager then it will fall back to using the GitHub license if it’s source is on GitHub.</p>
+
+<h2 id="repositories">Repositories</h2>
+
+<p>The main repositories are:</p>
+
+<h3 id="core">Core</h3>
+<ul>
+  <li><a href="https://github.com/librariesio/libraries.io">Libraries.io</a> Main rails app</li>
+</ul>
+
+<h4 id="manifest-parsers">Manifest parsers</h4>
+<ul>
+  <li><a href="https://github.com/librariesio/librarian">Librarian</a> GitHub manifest parsing API service</li>
+  <li><a href="https://github.com/librariesio/librarian-parsers">Librarian Parsers</a> Manifest parsers for Librarian</li>
+  <li><a href="https://github.com/librariesio/librarian-cli">Librarian CLI</a> File based dependency manifest parsing</li>
+  <li><a href="https://github.com/librariesio/bibliothecary">Bibliothecary</a></li>
+  <li><a href="https://github.com/librariesio/gem_parser">Gem Parser</a> Web service for parsing Ruby and Cocoapod manifests</li>
+  <li><a href="https://github.com/librariesio/gemnasium-parser">Gemnasium Parser</a> An improved fork of gemnasium-parser</li>
+  <li><a href="https://github.com/librariesio/carthage_parser">Carthage Parser</a> Web service for parsing Carthage manifests</li>
+  <li><a href="https://github.com/librariesio/mix-deps-json">mix-deps-json</a> Elixir parser for Hex dependency manifests</li>
+  <li><a href="https://github.com/librariesio/clojars-json">clojars json</a> Convert clojars.org data to JSON</li>
+</ul>
+
+<h3 id="the-api">The API</h3>
+<p><a href="https://github.com/librariesio/firehose">Firehose</a> Server Sent Events API for Libraries.io releases</p>
+
+<h3 id="libraries">Libraries</h3>
+<ul>
+  <li><a href="https://github.com/librariesio/languages">Languages</a> Just the language names and colors from github-lingust</li>
+  <li><a href="https://github.com/librariesio/semantic_range">Semantic Range</a> node-semver written in Ruby for comparison and inclusion of semantic versions and ranges.</li>
+  <li><a href="https://github.com/librariesio/semantic_interval">SemanticInterval</a> Turn Interval range syntax into SemVer range syntax</li>
+  <li><a href="https://github.com/librariesio/license-compatibility">License Compatibility</a> Check compatibility between different SPDX licenses</li>
+  <li><a href="https://github.com/librariesio/spdx">SPDX</a> A SPDX license normalizer</li>
+  <li><a href="https://github.com/librariesio/libhub">LibHub</a> Minimalistic GitHub client for Node.js</li>
+  <li><a href="https://github.com/librariesio/github_urls">GithubUrls</a> Parse GitHub repo details from a variety of urls</li>
+  <li><a href="https://github.com/librariesio/pictogram">Pictogram</a> Logos for programming languages and package managers</li>
+  <li><a href="https://github.com/librariesio/picto">Picto</a> CLI for managing logos in Pictogram</li>
+  <li><a href="https://github.com/librariesio/favicon">Favicon</a> Generate Libraries.io favicons for a given colour or language</li>
+  <li><a href="https://github.com/librariesio/package-managers">Package Managers</a> Metadata about every package manager that Libraries.io supports</li>
+</ul>
+
+<h3 id="github-firehose">GitHub Firehose</h3>
+<ul>
+  <li><a href="https://github.com/librariesio/github-firehose">Github Firehose</a> Server Sent Events firehose of GitHub public timeline</li>
+  <li><a href="https://github.com/librariesio/github-dispatch">GitHub Dispatch</a> Send events from the GitHub firehose into Sidekiq</li>
+</ul>
+
+<h3 id="webhooks">Webhooks</h3>
+<ul>
+  <li><a href="https://github.com/librariesio/lib2issues">Lib2Issues</a> Create GitHub Issues from Libraries.io webhooks</li>
+  <li><a href="https://github.com/librariesio/travis-rebuilder">Travis Rebuilder</a> Rerun travis-ci tests after any dependency is updated</li>
+  <li><a href="https://github.com/librariesio/sentinel">Sentinel</a> Automated dependency updates for Node.js projects</li>
+</ul>
+
+<h3 id="bots">Bots</h3>
+<ul>
+  <li><a href="https://github.com/librariesio/justopensourced">Just Open Sourced</a> Tweeting whenever a repo is open sourced on GitHub</li>
+  <li><a href="https://github.com/librariesio/firstprbot">First PR Bot</a> Tweets whenever someone opens their first open source pull request on GitHub</li>
+  <li><a href="https://github.com/librariesio/libby">Libby</a> Libraries.io hubot</li>
+</ul>
+
+<p>### Other</p>
+<ul>
+  <li><a href="https://github.com/librariesio/support">Support</a> Public issue tracker for Libraries.io users</li>
+  <li><a href="https://github.com/librariesio/documentation">Documentation</a> Documentation for the whole Libraries.io project</li>
+  <li><a href="https://github.com/librariesio/assets">Assets</a> Non-code assets for Libraries.io</li>
+  <li><a href="https://github.com/librariesio/github_companion">GitHub Companion</a> Google chrome extension that adds Libraries.io to GitHub repo pages</li>
+  <li><a href="https://github.com/librariesio/d3-dependencies">D3 Dependencies</a> D3 dependency graph visualization from Libraries.io API</li>
+  <li><a href="https://github.com/librariesio/firehose-stream">Firehose Stream</a> Live streaming visualization of Libraries.io releases using the Firehose</li>
+  <li><a href="https://github.com/librariesio/libsearch">libsearch</a> CLI for searching Libraries.io via the API</li>
+  <li><a href="https://github.com/librariesio/required_files">Required files (library)</a> Ensure some files exist in all your repo’s</li>
+  <li><a href="https://github.com/librariesio/required-files">Required files</a> Files that should exist in every Libraries.io repository</li>
+</ul>
+
+<h2 id="todo">TODO</h2>
+
+<p>Expand upon:</p>
+
+<ul>
+  <li>GitHub Firehose</li>
+  <li>Repository monitoring</li>
+  <li>Repository Dependencies</li>
+  <li>Distributed package managers (Carthage)</li>
+  <li>Notifications</li>
+  <li>Webhooks</li>
+  <li>SourceRank</li>
+  <li>Deprecated and unmaintained detection</li>
+  <li>Removal detection</li>
+  <li>Recommendations</li>
+  <li>Firehose</li>
+  <li>Rest API</li>
+  <li>Dependency warnings</li>
+  <li>Project suggestions</li>
+  <li>Project mutes</li>
+  <li>Subscriptions</li>
+</ul>
+
+  </div>
+
+</article>
+
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+         License <a href="https://github.com/librariesio/documentation/blob/master/LICENSE.txt">aGPLv3 </a> containing <a href="https://github.com/wild-flame/jekyll-simple/blob/master/LICENSE">MIT</a>
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        
+        <a href="https://github.com/librariesio"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a>
+
+        
+        
+        <a href="https://twitter.com/librariesio"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span></a>
+
+        
+      </section>
+    </div>
+  </div>
+</footer>
+ 
+    </div>
+  </body>
+</html>
