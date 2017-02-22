@@ -1,17 +1,34 @@
-## Technical Overview
+## Overview
+Libraries.io is made up of many smaller projects that work together to keep the [https://libraries.io](https://libraries.io) site running. 
 
-Libraries.io is made up of many smaller projects that work together to keep the [https://libraries.io](https://libraries.io) site running. The following diagram provides a high-level overview: 
+## Contents
 
-![Overview of Libraries.io archiitecture](https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png "Libraries.io Architecture")
+[Data Collection]
+	* [Package Managers](#package%20managers)
+	* [Repositoriess](#repositories)
+	* [Licenses](#licenses)
 
+[Architecture]
+	* [Diagram](#architecture)
+	* [Components](#components)
+
+[SourceRank] 
+	* [Code](#code)
+	* [Distribution](#distribution)
+	* [Community](#community)
+	* [Usage](#usage)
+
+### Package Managers
 Everything in Libraries.io begins with [package managers](/packagemanagers.md), on a regular basis background tasks find new or updated libraries from each of those packages managers, libraries cannot be added to the system unless they exist on one of those package managers.
 
+#### Projects, Versions and Dependencies
 Each library is stored in the [Project](https://github.com/librariesio/libraries.io/blob/master/app/models/project.rb) table, if that library's package manager supports published version numbers each new version is stored in the [Version](https://github.com/librariesio/libraries.io/blob/master/app/models/version.rb) table and if the package manager supports library dependencies then they are recorded in the [Dependency](https://github.com/librariesio/libraries.io/blob/master/app/models/dependency.rb) table.
 
-Libraries.io will then augment package manager data with data from GitHub if one is referenced in the package manager. GitHub repositories will be downloaded and stored in the [GitHubRepository](https://github.com/librariesio/libraries.io/blob/master/app/models/github_repository.rb) table, on creation a background Sidekiq task is kicked off to download related information from GitHub including:
+### Repositories
+Libraries.io will then augment package manager data with data from a Reposity if one is referenced in the package manager. GitHub repositories will be downloaded and stored in the [Repository](https://github.com/librariesio/libraries.io/blob/master/app/models/repository.rb) table, on creation a background Sidekiq task is kicked off to download related information from GitHub including:
 
 - [Readme](https://github.com/librariesio/libraries.io/blob/master/app/models/readme.rb)
-- [Git tags](https://github.com/librariesio/libraries.io/blob/master/app/models/github_tag.rb)
+- [Tags](https://github.com/librariesio/libraries.io/blob/master/app/models/github_tag.rb)
 - [Contributors](https://github.com/librariesio/libraries.io/blob/master/app/models/github_contribution.rb)
 - Owner ([GitHub user](https://github.com/librariesio/libraries.io/blob/master/app/models/github_user.rb) or [GitHub Org](https://github.com/librariesio/libraries.io/blob/master/app/models/github_organisation.rb))
 - Source repository (if it's a fork)
@@ -19,24 +36,28 @@ Libraries.io will then augment package manager data with data from GitHub if one
 
 Some package managers that don't have a concept of published versions (like Go and Bower), often they will fall back to using tags from a source repository if available, Libraries.io attempts to use GitHub tags as a fallback for all package managers that don't provide version information.
 
-## Licenses
+### Licenses
 
-All license names are ran through the [SPDX](https://github.com/librariesio/spdx) gem to normalize as many different ways of writing the name of standard licenses into a single version, which is then used for filtering within search and listing on https://libraries.io/licenses Licenses are stored as arrays on projects, as a library can have multiple licenses. If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.
+License names are ran through [SPDX](https://github.com/librariesio/spdx). This standardises the many different ways of writing the same licenses into a single version, which is then used for filtering in search and listing on https://libraries.io/licenses. A library can have multiple licenses as it may other libraries with conditions that are enforced upward.If a project doesn't have any license data from the package manager then it will fall back to using the (singular) Repository license.
 
-GitHub repositories have one license stored against them if provided by the [GitHub license API](https://developer.github.com/v3/licenses/), if a library doesn't have any license data from the package manager then it will fall back to using the GitHub license if it's source is on GitHub.
+If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.w
 
-## Repositories
+## Architecture
+Libraries.io is made up of a number of micro-services that work together. The following diagram provides a high-level overview: 
 
-The main repositories are:
+![Overview of Libraries.io architecture](https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png "Libraries.io Architecture")
 
-### Core
-* [Libraries.io](https://github.com/librariesio/libraries.io) Main rails app
+## Components
 
-#### Manifest parsers
-* [Librarian](https://github.com/librariesio/librarian) GitHub manifest parsing API service
-* [Librarian Parsers](https://github.com/librariesio/librarian-parsers) Manifest parsers for Librarian
-* [Librarian CLI](https://github.com/librariesio/librarian-cli) File based dependency manifest parsing
-* [Bibliothecary](https://github.com/librariesio/bibliothecary)
+The main bits are:
+
+### Core Web App
+
+* [Libraries.io](https://github.com/librariesio/libraries.io) The main website and the data store. 
+
+### Parsers
+
+* [Bibliothecary](https://github.com/librariesio/bibliothecary) parses manifest files
 * [Gem Parser](https://github.com/librariesio/gem_parser) Web service for parsing Ruby and Cocoapod manifests
 * [Gemnasium Parser](https://github.com/librariesio/gemnasium-parser) An improved fork of gemnasium-parser
 * [Carthage Parser](https://github.com/librariesio/carthage_parser) Web service for parsing Carthage manifests
@@ -49,19 +70,19 @@ The main repositories are:
 ### Libraries
 * [Languages](https://github.com/librariesio/languages) Just the language names and colors from github-lingust
 * [Semantic Range](https://github.com/librariesio/semantic_range) node-semver written in Ruby for comparison and inclusion of semantic versions and ranges.
-* [SemanticInterval](https://github.com/librariesio/semantic_interval) Turn Interval range syntax into SemVer range syntax
-* [License Compatibility](https://github.com/librariesio/license-compatibility) Check compatibility between different SPDX licenses
-* [SPDX](https://github.com/librariesio/spdx) A SPDX license normalizer
+* [SemanticInterval](https://github.com/librariesio/semantic_interval) Turns Interval range syntax into Semantic Version range syntax
+* [License Compatibility](https://github.com/librariesio/license-compatibility) Checks compatibility between different licenses from SPDX
+* [SPDX](https://github.com/librariesio/spdx) Standardises licenses
 * [LibHub](https://github.com/librariesio/libhub) Minimalistic GitHub client for Node.js
 * [GithubUrls](https://github.com/librariesio/github_urls) Parse GitHub repo details from a variety of urls
 * [Pictogram](https://github.com/librariesio/pictogram) Logos for programming languages and package managers
 * [Picto](https://github.com/librariesio/picto) CLI for managing logos in Pictogram
-* [Favicon](https://github.com/librariesio/favicon) Generate Libraries.io favicons for a given colour or language
+* [Favicon](https://github.com/librariesio/favicon) Generates Libraries.io favicons for a given colour or language
 * [Package Managers](https://github.com/librariesio/package-managers) Metadata about every package manager that Libraries.io supports
 
 ### GitHub Firehose
-* [Github Firehose](https://github.com/librariesio/github-firehose) Server Sent Events firehose of GitHub public timeline
-* [GitHub Dispatch](https://github.com/librariesio/github-dispatch) Send events from the GitHub firehose into Sidekiq
+* [Github Firehose](https://github.com/librariesio/github-firehose) Server-sent Events firehose of the GitHub public timeline
+* [GitHub Dispatch](https://github.com/librariesio/github-dispatch) Sends events from the GitHub firehose into Sidekiq
 
 ### Webhooks
 * [Lib2Issues](https://github.com/librariesio/lib2issues) Create GitHub Issues from Libraries.io webhooks
@@ -73,16 +94,18 @@ The main repositories are:
 * [First PR Bot](https://github.com/librariesio/firstprbot) Tweets whenever someone opens their first open source pull request on GitHub
 * [Libby](https://github.com/librariesio/libby) Libraries.io hubot
 
+### Firehose
+* [libsearch](https://github.com/librariesio/libsearch) CLI for searching Libraries.io via the API
+* [Required files (library)](https://github.com/librariesio/required_files) Ensures that certain files exist in all our repo's
+* [Required files](https://github.com/librariesio/required-files) Files that should exist in every Libraries.io repository
+* [Firehose Stream](https://github.com/librariesio/firehose-stream) Live streaming visualization of Libraries.io releases
+
 ### Other
-* [Support](https://github.com/librariesio/support) Public issue tracker for Libraries.io users
 * [Documentation](https://github.com/librariesio/documentation) Documentation for the whole Libraries.io project
+* [Support](https://github.com/librariesio/support) Public issue tracker for Libraries.io users
 * [Assets](https://github.com/librariesio/assets) Non-code assets for Libraries.io
 * [GitHub Companion](https://github.com/librariesio/github_companion) Google chrome extension that adds Libraries.io to GitHub repo pages
 * [D3 Dependencies](https://github.com/librariesio/d3-dependencies) D3 dependency graph visualization from Libraries.io API
-* [Firehose Stream](https://github.com/librariesio/firehose-stream) Live streaming visualization of Libraries.io releases using the Firehose
-* [libsearch](https://github.com/librariesio/libsearch) CLI for searching Libraries.io via the API
-* [Required files (library)](https://github.com/librariesio/required_files) Ensure some files exist in all your repo's
-* [Required files](https://github.com/librariesio/required-files) Files that should exist in every Libraries.io repository
 
 ## TODO
 
@@ -104,3 +127,140 @@ Expand upon:
 - Project suggestions
 - Project mutes
 - Subscriptions
+
+## SourceRank
+SourceRank is the name we (unimaginatively) give to the scoring algorithm that provides the index for search results on Libraries.io.
+
+### What's the maximum SourceRank score?
+The maximum score for SourceRank is currently around 30 points.  
+
+### Where does this data come from?
+SourceRank meta data is sourced from:
+
+* the package manager from which it is distributed,
+* the platform upon which the code is hosted,
+* the code itself.
+
+### What data is collected?
+Our analysis is broken down into three parts:
+
+* [Code](#code)
+* [Distribution](#distribution)
+* [Documentation](#documentation)
+* [Community](#community)
+* [Usage](#usage)
+
+### Code
+
+#### Does the project have any outdated dependencies?
+
+Tag: `any_outdated_dependencies`
+Score: `-2`
+
+### Distribution
+
+#### Is there a link to the source code?
+
+Tag: `repository_present` 
+Score: `+1`
+
+#### Does the project use versioning?
+
+Tag: `versions_present`
+Score: `+1`
+
+#### Does every version use semantic versioning?
+
+Tag: `follows_semver`
+Score: `+1`
+
+#### Has the project reached version 1.0.0 yet?
+
+Tag: `one_point_oh`
+Score: `+1`
+
+#### Is the project more than six months old?
+
+Tag: `not_brand_new`
+Score: `+1`
+
+#### Has the project had a release within the last six months?
+
+Tag: `recent_release`
+Score: `+1`
+
+#### Are all published versions marked as 'pre-release' by the maintainer?
+
+Tag: `all_prereleases`
+Score: `-2`
+
+#### Is the project marked as deprecated by the owner?
+
+Tag: `is_deprecated`
+Score: `-5`
+
+#### Is the project marked as unmaintained by the maintainer?
+Tag: is_unmaintained
+Score: `-5`
+
+#### Has the project been removed from the package manager?
+
+Tag: `is_removed`
+Score: `-5`
+
+### Documentation
+
+#### Does the project have a readme file?
+
+Tag: `readme_present`
+Score: `+1`
+
+#### Does the project have a valid license?
+Licenses are parsed using the SPDX library to find standard free or open source licenses. 
+
+Tag: `license_present`
+Score: `+1`
+
+#### Does the project have a description?
+A homepage or a link to a repository link and keywords.
+
+Tag: `basic_info_present`
+Score: `+1`
+
+### Community
+
+#### How many 'stars' does the project have?
+> Stars are used a measure of a project's popularity.
+[@arfon](https://twitter.com/arfon)
+
+Tag: `stars`
+Score: `+log(stars)/2`
+
+#### How many contributors does the project have?
+
+Tag: `contributors`
+Score: `+log(contributors)/2`
+
+#### How many 'subscribers' does the project have?
+
+Tag: `subscribers`
+Score: `+log(subscribers)/2`
+
+#### Has there been an update within the last six months?
+
+Tag: `recently_pushed`
+Score: `+1`
+
+### Usage
+
+#### How many projects are dependent on this project?
+How many projects published using a [supported package manager](/packagemanagers) are dependent on this project?
+
+Tag: `dependent_projects`
+Score: `+log(dependent_projects)*2`
+
+#### How many repositories are dependent on this project?
+How many projects *not* published using a [supported package manager](/packagemanagers) are dependent on this project?
+
+Tag: `dependent_repositories`
+Score: `+log(dependent_repositories)`
