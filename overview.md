@@ -3,20 +3,22 @@ Libraries.io is made up of many smaller projects that work together to keep the 
 
 ## Contents
 
-[Data Collection]
-	* [Package Managers](#package%20managers)
-	* [Repositoriess](#repositories)
-	* [Licenses](#licenses)
+[Data Collection](#package-managers)
+* [Package Managers](#package-managers)
+* [Repositories](#repositories)
+* [Licenses](#licenses)
 
-[Architecture]
-	* [Diagram](#architecture)
-	* [Components](#components)
+[Architecture](#architecture)
+* [Diagram](#architecture)
+* [Components](#components)
 
-[SourceRank] 
-	* [Code](#code)
-	* [Distribution](#distribution)
-	* [Community](#community)
-	* [Usage](#usage)
+[SourceRank](#sourcerank)
+* [Code](#code)
+* [Community](#community)
+* [Distribution](#distribution)
+* [Documentation](#documentation)
+* [Usage](#usage)
+
 
 ### Package Managers
 Everything in Libraries.io begins with [package managers](/packagemanagers.md), on a regular basis background tasks find new or updated libraries from each of those packages managers, libraries cannot be added to the system unless they exist on one of those package managers.
@@ -37,7 +39,6 @@ Libraries.io will then augment package manager data with data from a Reposity if
 Some package managers that don't have a concept of published versions (like Go and Bower), often they will fall back to using tags from a source repository if available, Libraries.io attempts to use GitHub tags as a fallback for all package managers that don't provide version information.
 
 ### Licenses
-
 License names are ran through [SPDX](https://github.com/librariesio/spdx). This standardises the many different ways of writing the same licenses into a single version, which is then used for filtering in search and listing on https://libraries.io/licenses. A library can have multiple licenses as it may other libraries with conditions that are enforced upward.If a project doesn't have any license data from the package manager then it will fall back to using the (singular) Repository license.
 
 If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.w
@@ -129,7 +130,7 @@ Expand upon:
 - Subscriptions
 
 ## SourceRank
-SourceRank is the name we (unimaginatively) give to the scoring algorithm that provides the index for search results on Libraries.io.
+SourceRank is the name for the algorithm that we use to index search results.
 
 ### What's the maximum SourceRank score?
 The maximum score for SourceRank is currently around 30 points.  
@@ -139,128 +140,47 @@ SourceRank meta data is sourced from:
 
 * the package manager from which it is distributed,
 * the platform upon which the code is hosted,
-* the code itself.
 
 ### What data is collected?
-Our analysis is broken down into three parts:
+Our analysis is broken down into:
 
 * [Code](#code)
+* [Community](#community)
 * [Distribution](#distribution)
 * [Documentation](#documentation)
-* [Community](#community)
 * [Usage](#usage)
 
 ### Code
 
-#### Does the project have any outdated dependencies?
-
-Tag: `any_outdated_dependencies`
-Score: `-2`
-
-### Distribution
-
-#### Is there a link to the source code?
-
-Tag: `repository_present` 
-Score: `+1`
-
-#### Does the project use versioning?
-
-Tag: `versions_present`
-Score: `+1`
-
-#### Does every version use semantic versioning?
-
-Tag: `follows_semver`
-Score: `+1`
-
-#### Has the project reached version 1.0.0 yet?
-
-Tag: `one_point_oh`
-Score: `+1`
-
-#### Is the project more than six months old?
-
-Tag: `not_brand_new`
-Score: `+1`
-
-#### Has the project had a release within the last six months?
-
-Tag: `recent_release`
-Score: `+1`
-
-#### Are all published versions marked as 'pre-release' by the maintainer?
-
-Tag: `all_prereleases`
-Score: `-2`
-
-#### Is the project marked as deprecated by the owner?
-
-Tag: `is_deprecated`
-Score: `-5`
-
-#### Is the project marked as unmaintained by the maintainer?
-Tag: is_unmaintained
-Score: `-5`
-
-#### Has the project been removed from the package manager?
-
-Tag: `is_removed`
-Score: `-5`
-
-### Documentation
-
-#### Does the project have a readme file?
-
-Tag: `readme_present`
-Score: `+1`
-
-#### Does the project have a valid license?
-Licenses are parsed using the SPDX library to find standard free or open source licenses. 
-
-Tag: `license_present`
-Score: `+1`
-
-#### Does the project have a description?
-A homepage or a link to a repository link and keywords.
-
-Tag: `basic_info_present`
-Score: `+1`
+* Does the project have any outdated dependencies? Tag: `any_outdated_dependencies, Score: `-2`
 
 ### Community
 
-#### How many 'stars' does the project have?
-> Stars are used a measure of a project's popularity.
-[@arfon](https://twitter.com/arfon)
+* How many 'stars' does the project have? Tag: `stars` Score: `+log(stars)/2`
+* How many contributors does the project have? Tag: `contributors` Score: `+log(contributors)/2`
+* How many 'subscribers' does the project have? Tag: `subscribers` Score: `+log(subscribers)/2`
+* Has there been an update within the last six months? Tag: `recently_pushed` Score: `+1`
 
-Tag: `stars`
-Score: `+log(stars)/2`
+### Distribution
 
-#### How many contributors does the project have?
+* Is there a link to the source code? Tag: `repository_present` Score: `+1`
+* Does the project use versioning? Tag: `versions_present` Score: `+1`
+* Does every version use semantic versioning? Tag: `follows_semver` Score: `+1`
+* Has the project reached version 1.0.0 yet? Tag: `one_point_oh` Score: `+1`
+* Is the project more than six months old? Tag: `not_brand_new` Score: `+1`
+* Has the project had a release within the last six months? Tag: `recent_release` Score: `+1`
+* Are all published versions marked as 'pre-release' by the maintainer? Tag: `all_prereleases` Score: `-2`
+* Has the project been removed from the package manager? Tag: `is_removed` Score: `-5`
 
-Tag: `contributors`
-Score: `+log(contributors)/2`
+### Documentation
 
-#### How many 'subscribers' does the project have?
-
-Tag: `subscribers`
-Score: `+log(subscribers)/2`
-
-#### Has there been an update within the last six months?
-
-Tag: `recently_pushed`
-Score: `+1`
+* Does the project have a readme file? Tag: `readme_present` Score: `+1`
+* Does the project have a valid license? Tag: `license_present` Score: `+1`
+* Does the project have a description, homepage, repository link or keywords? Tag: `basic_info_present` Score: `+1`
+* Is the project marked as deprecated by the owner? Tag: `is_deprecated' Score: `-5`
+* Is the project marked as unmaintained by the maintainer? Tag: is_unmaintained Score: `-5`
 
 ### Usage
 
-#### How many projects are dependent on this project?
-How many projects published using a [supported package manager](/packagemanagers) are dependent on this project?
-
-Tag: `dependent_projects`
-Score: `+log(dependent_projects)*2`
-
-#### How many repositories are dependent on this project?
-How many projects *not* published using a [supported package manager](/packagemanagers) are dependent on this project?
-
-Tag: `dependent_repositories`
-Score: `+log(dependent_repositories)`
+* How many [Projects](#projects-versions-and-dependencies) are dependent on this project?  Tag: `dependent_projects` Score: `+log(dependent_projects)*2`
+* How many [Repositories](#repositories) are dependent on this project? Tag: `dependent_repositories` Score: `+log(dependent_repositories)`

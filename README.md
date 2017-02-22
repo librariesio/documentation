@@ -26,7 +26,7 @@ Everything in Libraries.io begins with [package managers](/packagemanagers.md), 
 
 Using the data collected we then calculate the [SourceRank](/sourcerank.md), this value is used to index the project in search results. Next we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities etc. to maintainers who depend on a given library. Finally we highlight undervalued and under-supported libraries, guiding maintainers toward projects that they could contribute to that would have a direct benefit on their own work. 
 
-If you'd like an in-depth technical overview, including a description of each of the repositories in the Libraries.io organisation and how they work together then check out our [technical overview](/techoverview.md).
+If you'd like an overview of the project, including a description of each of the repositories in the Libraries.io organisation and how they work together then check out our [overview](/overview.md).
 
 ## How Can I Help?
 If you wish to contribute to Libraries.io must agree to our [code of conduct](/CODE_OF_CONDUCT.md). In short they say: be excellent to one another. If you're able to abide by those terms then check out our [contributor's handbook](/contributorshandbook.md).

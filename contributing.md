@@ -88,7 +88,7 @@ Tickets are labeled by size, skills required and to indicate workflow. Details c
 To get you started you might want to check out issues concerning [documentation](https://github.com/librariesio/documentation/issues/), [user experience](https://github.com/librariesio/libraries.io/labels/ux), [visual design](https://github.com/librariesio/libraries.io/issues/labels/visual%20design) or perhaps something already [awaiting help](https://github.com/librariesio/libraries.io/labels/help%20wanted). You may find the following useful:
 
 * Our [strategy](/strategy.md) which outlines what our goals are, how we are going to achieve those goals and what we are specifically going to avoid.
-* A [techncial overview](/techoverview.md) of the components that make up the Libraries.io project and run the [https://libraries.io](https://libraries.io) site.
+* A [techncial overview](/overview.md) of the components that make up the Libraries.io project and run the [https://libraries.io](https://libraries.io) site.
 
 ## How Can I Talk To Other Contributors?
 
