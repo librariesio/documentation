@@ -1,5 +1,4 @@
 ## Overview
-Libraries.io is made up of many smaller projects that work together to keep the [https://libraries.io](https://libraries.io) site running. 
 
 ## Contents
 
@@ -41,7 +40,7 @@ Some package managers that don't have a concept of published versions (like Go a
 ### Licenses
 License names are ran through [SPDX](https://github.com/librariesio/spdx). This standardises the many different ways of writing the same licenses into a single version, which is then used for filtering in search and listing on https://libraries.io/licenses. A library can have multiple licenses as it may other libraries with conditions that are enforced upward.If a project doesn't have any license data from the package manager then it will fall back to using the (singular) Repository license.
 
-If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.w
+If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.
 
 ## Architecture
 Libraries.io is made up of a number of micro-services that work together. The following diagram provides a high-level overview: 
@@ -164,7 +163,6 @@ Expand upon:
 - Distributed package managers (Carthage)
 - Notifications
 - Webhooks
-- SourceRank
 - Deprecated and unmaintained detection
 - Removal detection
 - Recommendations
