@@ -101,47 +101,16 @@ The main bits are:
 * [Required files](https://github.com/librariesio/required-files) Files that should exist in every Libraries.io repository
 * [Firehose Stream](https://github.com/librariesio/firehose-stream) Live streaming visualization of Libraries.io releases
 
-### Other
+### Other
 * [Documentation](https://github.com/librariesio/documentation) Documentation for the whole Libraries.io project
 * [Support](https://github.com/librariesio/support) Public issue tracker for Libraries.io users
 * [Assets](https://github.com/librariesio/assets) Non-code assets for Libraries.io
 * [GitHub Companion](https://github.com/librariesio/github_companion) Google chrome extension that adds Libraries.io to GitHub repo pages
 * [D3 Dependencies](https://github.com/librariesio/d3-dependencies) D3 dependency graph visualization from Libraries.io API
 
-## TODO
-
-Expand upon:
-
-- GitHub Firehose
-- Repository monitoring
-- Repository Dependencies
-- Distributed package managers (Carthage)
-- Notifications
-- Webhooks
-- SourceRank
-- Deprecated and unmaintained detection
-- Removal detection
-- Recommendations
-- Firehose
-- Rest API
-- Dependency warnings
-- Project suggestions
-- Project mutes
-- Subscriptions
-
 ## SourceRank
-SourceRank is the name for the algorithm that we use to index search results.
+SourceRank is the name for the algorithm that we use to index search results. The maximum score for SourceRank is currently around 30 points.
 
-### What's the maximum SourceRank score?
-The maximum score for SourceRank is currently around 30 points.  
-
-### Where does this data come from?
-SourceRank meta data is sourced from:
-
-* the package manager from which it is distributed,
-* the platform upon which the code is hosted,
-
-### What data is collected?
 Our analysis is broken down into:
 
 * [Code](#code)
@@ -184,3 +153,24 @@ Our analysis is broken down into:
 
 * How many [Projects](#projects-versions-and-dependencies) are dependent on this project?  Tag: `dependent_projects` Score: `+log(dependent_projects)*2`
 * How many [Repositories](#repositories) are dependent on this project? Tag: `dependent_repositories` Score: `+log(dependent_repositories)`
+
+## TODO
+
+Expand upon:
+
+- GitHub Firehose
+- Repository monitoring
+- Repository Dependencies
+- Distributed package managers (Carthage)
+- Notifications
+- Webhooks
+- SourceRank
+- Deprecated and unmaintained detection
+- Removal detection
+- Recommendations
+- Firehose
+- Rest API
+- Dependency warnings
+- Project suggestions
+- Project mutes
+- Subscriptions
