@@ -40,7 +40,7 @@ License names are ran through [SPDX](https://github.com/librariesio/spdx). This 
 If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.
 
 ## Architecture
-Libraries.io is made up of a number of micro-services that work together. The following diagram provides a high-level overview: 
+Libraries.io is made up of a number of micro-services that work together. The following diagram provides a high-level overview:
 
 ![Overview of Libraries.io architecture](https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png "Libraries.io Architecture")
 
@@ -50,16 +50,15 @@ The main bits are:
 
 ### Core Web App
 
-* [Libraries.io](https://github.com/librariesio/libraries.io) The main website and the data store. 
+* [Libraries.io](https://github.com/librariesio/libraries.io) The main website and the data store.
 
 ### Parsers
-
 * [Bibliothecary](https://github.com/librariesio/bibliothecary) parses manifest files
-* [Gem Parser](https://github.com/librariesio/gem_parser) Web service for parsing Ruby and Cocoapod manifests
 * [Gemnasium Parser](https://github.com/librariesio/gemnasium-parser) An improved fork of gemnasium-parser
-* [Carthage Parser](https://github.com/librariesio/carthage_parser) Web service for parsing Carthage manifests
 * [mix-deps-json](https://github.com/librariesio/mix-deps-json) Elixir parser for Hex dependency manifests
 * [clojars json](https://github.com/librariesio/clojars-json) Convert clojars.org data to JSON
+* [Carthage Parser](https://github.com/librariesio/carthage_parser) Web service for parsing Carthage manifests
+* [Yarn Parser](https://github.com/librariesio/yarn-parser) Web service for parsing yarn.lock manifests
 
 ### The API
 [Firehose](https://github.com/librariesio/firehose) Server Sent Events API for Libraries.io releases
@@ -70,11 +69,7 @@ The main bits are:
 * [SemanticInterval](https://github.com/librariesio/semantic_interval) Turns Interval range syntax into Semantic Version range syntax
 * [License Compatibility](https://github.com/librariesio/license-compatibility) Checks compatibility between different licenses from SPDX
 * [SPDX](https://github.com/librariesio/spdx) Standardises licenses
-* [LibHub](https://github.com/librariesio/libhub) Minimalistic GitHub client for Node.js
-* [GithubUrls](https://github.com/librariesio/github_urls) Parse GitHub repo details from a variety of urls
 * [Pictogram](https://github.com/librariesio/pictogram) Logos for programming languages and package managers
-* [Picto](https://github.com/librariesio/picto) CLI for managing logos in Pictogram
-* [Favicon](https://github.com/librariesio/favicon) Generates Libraries.io favicons for a given colour or language
 * [Package Managers](https://github.com/librariesio/package-managers) Metadata about every package manager that Libraries.io supports
 
 ### GitHub Firehose
@@ -92,10 +87,13 @@ The main bits are:
 * [Libby](https://github.com/librariesio/libby) Libraries.io hubot
 
 ### Firehose
-* [libsearch](https://github.com/librariesio/libsearch) CLI for searching Libraries.io via the API
+* [Firehose Stream](https://github.com/librariesio/firehose-stream) Live streaming visualization of Libraries.io releases
+
+### Tools
 * [Required files (library)](https://github.com/librariesio/required_files) Ensures that certain files exist in all our repo's
 * [Required files](https://github.com/librariesio/required-files) Files that should exist in every Libraries.io repository
-* [Firehose Stream](https://github.com/librariesio/firehose-stream) Live streaming visualization of Libraries.io releases
+* [libsearch](https://github.com/librariesio/libsearch) CLI for searching Libraries.io via the API
+* [Picto](https://github.com/librariesio/picto) CLI for managing logos in Pictogram
 
 ### Other
 * [Documentation](https://github.com/librariesio/documentation) Documentation for the whole Libraries.io project
@@ -103,6 +101,15 @@ The main bits are:
 * [Assets](https://github.com/librariesio/assets) Non-code assets for Libraries.io
 * [GitHub Companion](https://github.com/librariesio/github_companion) Google chrome extension that adds Libraries.io to GitHub repo pages
 * [D3 Dependencies](https://github.com/librariesio/d3-dependencies) D3 dependency graph visualization from Libraries.io API
+
+### Retired repositories
+* [Librarian](https://github.com/librariesio/librarian) Node.js web service for parsing dependencies from manifests
+* [Librarian-parsers](https://github.com/librariesio/librarian-parsers) Node.js library for parsing dependencies from manifests
+* [Librarian-cli](https://github.com/librariesio/librarian-cli) Node.js cli for parsing dependencies from manifests
+* [Gem Parser](https://github.com/librariesio/gem_parser) Web service for parsing Ruby and Cocoapod manifests
+* [GithubUrls](https://github.com/librariesio/github_urls) Parse GitHub repo details from a variety of urls
+* [LibHub](https://github.com/librariesio/libhub) Minimalistic GitHub client for Node.js
+* [Favicon](https://github.com/librariesio/favicon) Generates Libraries.io favicons for a given colour or language
 
 ## SourceRank
 SourceRank is the name for the algorithm that we use to index search results. The maximum score for SourceRank is currently around 30 points.
