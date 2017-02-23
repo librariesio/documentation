@@ -58,6 +58,7 @@ The main bits are:
 * [mix-deps-json](https://github.com/librariesio/mix-deps-json) Elixir parser for Hex dependency manifests
 * [clojars json](https://github.com/librariesio/clojars-json) Convert clojars.org data to JSON
 * [Carthage Parser](https://github.com/librariesio/carthage_parser) Web service for parsing Carthage manifests
+* [Yarn Parser](https://github.com/librariesio/yarn-parser) Web service for parsing yarn.lock manifests
 
 ### The API
 [Firehose](https://github.com/librariesio/firehose) Server Sent Events API for Libraries.io releases
