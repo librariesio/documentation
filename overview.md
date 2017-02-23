@@ -1,7 +1,4 @@
 ## Overview
-
-## Contents
-
 [Data Collection](#package-managers)
 * [Package Managers](#package-managers)
 * [Repositories](#repositories)
