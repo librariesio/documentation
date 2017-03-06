@@ -1,5 +1,5 @@
 ## Labelling
-Labelling is a key part of our workflow. We label issues by size, type or skills needed and drive parts of our process using them. Specifically we label tickets that are ideal for first time contributors or those that are part of our funded commitments.
+Labelling is a key part of our workflow. We label issues by size, type or skills needed and drive parts of our process using them. Specifically we label tickets that are ideal for first-time contributors or those that are part of our funded commitments.
 
 ### Size
 In the following *day* and *week* mean 'working approximately 7.5 hours per day, five days a week'. That is not to say any contributor is expected to work full-time on the project, but it should provide a truer sense of scale.
@@ -26,7 +26,7 @@ Projects typically indicate the type of issue, but we would like to be more expl
 * `UX` These issues relate to how the site works, or more holistically, how the site *feels* to the end user, and will normally be related to the front-end of the website. These issues might typically relate to confusion stemming from navigation, form elements, input validation, or breaks in user flows.
 
 ### First-time Contributors
-* `first-pr` will be used for any ticket ideal for a firs ttime contributor. These tickets will require minimal understanding of Libraries.io's strategy, architecture and minimal work to install a environment from which to work.
+* `first-pr` will be used for any ticket ideal for a first-time contributor. These tickets will require minimal understanding of Libraries.io's strategy, architecture and minimal work to install a environment from which to work.
 
 ### Funder Commitments
 
