@@ -21,6 +21,8 @@ Thanks for considering contributing. These guidelines outline how to contribute 
 * [Video](#video)
 * [Social media](#twitter)
 
+[Who Are Libraries.io's Users?](#who-are-librariesios-users)
+
 [Our workflow](#workflow)
 
 
@@ -123,6 +125,27 @@ We have a Facebook page at [@libraries.io](https://www.facebook.com/libraries.io
 
 ### Medium
 We have a Medium account at [@librariesio](https://medium.com/@librariesio) and once again it is used to reflect news, events and musings by contributors rather than a direct method of communication. Contributors are encouraged to reference @librariesio in a post when talking about the project, so that we may recommend it if appropriate. Again the account is moderated and protected by the [core team](https://github.com/orgs/librariesio/teams/core).
+
+## Who Are Libraries.io's Users?
+Libraries.io focusses on the following personas:
+
+### Google 
+_Is hungry for linked data so she can serve you up search traffic_
+
+### 'Searcher' 
+_Is a developer with a problem, she is looking for something to help solve it._ 
+
+### 'Producer' 
+_Has a product or products that incorporates some free/open source dependencies. She needs to ensure the product(s) are well maintained, free of vulnerabilities and licence compatible._
+
+### 'Maintainer'
+_Is a developer with a successful free/open source project. She's looking to understand more about those who use her project, attract more contributors and manage their contributions well._
+
+### 'Extender'
+_Has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world._
+
+### 'Overlord'
+_Has a vast empire of people, products and projects. Some of which she publishes as open source, some are proprietary. She wants to ensure that her policies regarding the use of dependencies are adhered to and that her team are as efficient as possible._
 
 ## Workflow
 In general we use [GitHub](https://help.github.com/) and [Git](https://git-scm.com/docs/gittutorial) to support our workflow. If you are unfamiliar with those tools then you should check them out until you feel you have a basic understanding of GitHub and a working understanding of Git. Specifically you should understand how forking, branching, committing, PRing and merging works.
