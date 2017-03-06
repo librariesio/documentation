@@ -37,8 +37,11 @@ By outlining our [mission and strategy](/strategy.md) we hope to give you more p
 ### Code of Conduct
 Libraries.io is an open and inclusive [community of people](https://github.com/orgs/librariesio/people) working together. We expect contributors to abide by our [contributor code of conduct](CODE_OF_CONDUCT.md) which basically say 'be excellent to each other'. Please report unacceptable behavior to conduct@libraries.io
 
-### Langauge
+### Language
 We communicate predominately in English. Contributions to the project should be made with English as the first language. We are happy for members of the community to communicate in a language other than English in chat, email and video but be aware that this might be considered exclusive by other members of the community.
+
+### Documentation
+Documentation for the project as a whole is available at [docs.libraries.io](https://docs.libraries.io). These pages are generated from the [documentation](https://github.com/librariesio/documentation) repo. Documentation that needs to be in every repo is replicated in [required-files](https://github.com/librariesio/required-files) (currently limited to [GitHub templates](https://github.com/blog/2111-issue-and-pull-request-templates)). Otherwise documentation will be specific to that repo. For example the main [Libraries.io](https://github.com/librariesio/libraries.io) `README.md` contains information about installing and running the main rails application.
 
 ### Setup
 If you wish to make contributions to Libraries.io then you'll need a local version of the site to test. You can find instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/librariesio/libraries.io/blob/master/README.md#getting-started).
