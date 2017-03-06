@@ -3,6 +3,7 @@ Thanks for considering contributing. These guidelines outline how to contribute 
 
 ## Table of Contents
 [What is Libraries.io all about?](#whats-librariesio-about)
+
 [What should I know Before I get started?](#what-should-i-know-before-i-get-started)
 * [Code of conduct](#code-of-conduct)
 * [Langauge](#langauge)
