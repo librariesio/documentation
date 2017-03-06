@@ -26,7 +26,7 @@ Projects typically indicate the type of issue, but we would like to be more expl
 * `UX` These issues relate to how the site works, or more holistically, how the site *feels* to the end user, and will normally be related to the front-end of the website. These issues might typically relate to confusion stemming from navigation, form elements, input validation, or breaks in user flows.
 
 ### First-time Contributors
-* `first-pr` will be used for any ticket ideal for a firs ttime contributor. These tickets will require minimal understanding of Libraries.io's strategy, architecture and minimal work to install a environment from which to work.
+* `first-pr` will be used for any ticket ideal for a first time contributor. These tickets will require minimal understanding of Libraries.io's strategy, architecture and minimal work to install a environment from which to work.
 
 ### Funder Commitments
 
