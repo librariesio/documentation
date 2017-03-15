@@ -42,7 +42,7 @@ If a project has a non-standard or commercial license it's currently normalized 
 ## Architecture
 Libraries.io is made up of a number of micro-services that work together. The following diagram provides a high-level overview:
 
-![Overview of Libraries.io architecture](https://cloud.githubusercontent.com/assets/1060/22747144/19b1c3ea-ee1e-11e6-93ca-bf505ee5ee6f.png "Libraries.io Architecture")
+![Overview of Libraries.io architecture](infrastructure.png "Libraries.io Architecture")
 
 ## Components
 
