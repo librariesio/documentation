@@ -35,6 +35,15 @@ By outlining our [mission and strategy](/strategy.md) we hope to give you more p
 * Maintainability: _Helping maintainers understand more about the software they depend upon and the consumers of their software._
 * Sustainability: _Supporting undervalued software by highlighting shortfalls in contribution and funneling support to them._
 
+## Who is Libraries.io For?
+Libraries.io currently caters for the needs of three distinct user groups:
+
+* Google: _is hungry for your linked datas so she can serve you up search traffic_
+* Searcher: _is a developer with a problem, she is looking for something to help solve it._ 
+* Maintainer: _has a project that is used within and/or incorporates open dependencies. She needs to ensure her project(s) are working as expected for users._
+
+These groups have been expanded into [personas](https://docs.libraries.io/personas) for contributors to reference. 
+
 ## What Should I Know Before I Get Started?
 
 ### Code of Conduct
