@@ -83,7 +83,6 @@ The main bits are:
 
 ### Bots
 * [Just Open Sourced](https://github.com/librariesio/justopensourced) Tweeting whenever a repo is open sourced on GitHub
-* [First PR Bot](https://github.com/librariesio/firstprbot) Tweets whenever someone opens their first open source pull request on GitHub
 * [Libby](https://github.com/librariesio/libby) Libraries.io hubot
 
 ### Firehose
@@ -110,6 +109,7 @@ The main bits are:
 * [GithubUrls](https://github.com/librariesio/github_urls) Parse GitHub repo details from a variety of urls
 * [LibHub](https://github.com/librariesio/libhub) Minimalistic GitHub client for Node.js
 * [Favicon](https://github.com/librariesio/favicon) Generates Libraries.io favicons for a given colour or language
+* [First PR Bot](https://github.com/librariesio/firstprbot) Tweets whenever someone opens their first open source pull request on GitHub
 
 ## SourceRank
 SourceRank is the name for the algorithm that we use to index search results. The maximum score for SourceRank is currently around 30 points.
