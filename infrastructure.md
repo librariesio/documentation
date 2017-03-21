@@ -37,7 +37,7 @@ Where all the services and APIs currently exist:
 - carthageparser sinatra app
 - clojars-json clojure app
 - firstprbot twitter bot
-- github-dispatch ruby app
+- dispatch ruby app
 - github-firehose node app
 - libby the libraries hubot
 - justopensourced twitter bot

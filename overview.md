@@ -74,7 +74,7 @@ The main bits are:
 
 ### GitHub Firehose
 * [Github Firehose](https://github.com/librariesio/github-firehose) Server-sent Events firehose of the GitHub public timeline
-* [GitHub Dispatch](https://github.com/librariesio/github-dispatch) Sends events from the GitHub firehose into Sidekiq
+* [Dispatch](https://github.com/librariesio/dispatch) Dispatch events from various sources into Libraries.io job queue
 
 ### Webhooks
 * [Lib2Issues](https://github.com/librariesio/lib2issues) Create GitHub Issues from Libraries.io webhooks
