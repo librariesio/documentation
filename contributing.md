@@ -44,7 +44,7 @@ Libraries.io currently caters for the needs of three distinct user groups:
 * Searcher: _is a developer with a problem, she is looking for something to help solve it._ 
 * Maintainer: _has a project that is used within and/or incorporates open dependencies. She needs to ensure her project(s) are working as expected for users._
 
-These groups have been expanded into [personas](https://docs.libraries.io/personas) for contributors to reference. 
+These groups have been expanded into [personas](/personas.md) for contributors to reference. 
 
 ## What Should I Know Before I Get Started?
 
