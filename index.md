@@ -19,6 +19,18 @@ We do this by tackling three problems:
 
 If you'd like to know why we think this is the right approach then check out [our strategy](/strategy.md).
 
+## Who is Libraries.io For?
+
+Libraries.io currently caters for the needs of three groups:
+
+* Google: is hungry for your linked datas so she can serve you up search traffic
+* Searcher: is a developer with a problem, she is looking for something to help solve it.
+* Maintainer: has a project that is used within and/or incorporates open dependencies. She needs to ensure her project(s) are working as expected for users.
+* Extender: has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world.
+
+
+These groups have been expanded into [personas](/personas.md) for contributors to reference.
+
 ## How Does Libraries.io Work?
 Libraries.io collects data about software and the frameworks, plugins and tools they depend upon which we collectively call libraries.
 

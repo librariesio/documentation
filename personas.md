@@ -1,0 +1,53 @@
+## Personas
+The following personas are representative and they *will* evolve. 
+
+If you use Libraries.io regularly we would love to hear from you please get in touch through [twitter](https://twitter.com/librariesio) in our open [chat room](https://slack.libraries.io) or as a ticket [in our issue tracker](https://github.comlibrariesio/libraries.io).
+
+### Google
+_is hungry for your linked datas so she can serve you up search traffic_
+
+You know Google, right? That little business based in Mountain View. The one that serves hand-crafted, small-batch, globally-sourced datas in return for your eyeballs? That Google. We care about Google because Google are no longer offering Google Code-like tools for developers, so we have taken it upon ourselves to improve Google search for software. We also care a little (as in enough to have them, but not enough to ruin the UX of the site) about money generated from ads, they more than pay for our hosting costs.
+
+### Searcher (Ada)
+_A developer with a problem, she is looking for something to help solve it._ 
+
+- Age: 25
+- Education: BSc Computer Science
+- Lives: London
+- Works: Marketing agency
+- Role: Developer/Engineer
+- Likes: Cycling, Cats, Animé
+
+Ada is a senior software developer, four years out of her computer science degree. She cycles from home into the office in Soho, London where she works at small but ambitious marketing agency who specialise in websites for new products and advertising campaigns. She works alongside four other developers and two front-end designers. The team has two account managers who support them, and two directors who do the 'creative' work. The agency is run on a tight budget, in a competitive market, pitching for projects against other small agencies. Like a lot of young agencies they rely on open source software to lower their production costs. 
+
+Ada uses Libraries.io to vet libraries she might want to use on a current or future project. Sometimes she hears about a project from a friend, reads about it on hackernews or sees talk about it at a conference. She's thinks it might come in handy but wants to know a little more: is the library is reliable, actively developed, is there good documentation and a community to support her if she comes unstuck? 
+
+### Maintainer (Belinda)
+_A developer maitnianing a successful FOSS project. She's looking to understand more about those who use her project, attract more contributors and manage their contributions well._
+
+- Age: 28
+- Education: MSc 
+- Lives: Austin
+- Works: Large Technology Company
+- Role: Developer
+- Likes: Skiing, Hiking, Craft Beers 
+ 
+Charlie works at a large technology company. She works there company because the company allows her to work one day a week on open source projects. For three years Charlie has been a contributor to Pipe, an ORM library. Pipe has a *very* active community of users posting questions, ticketing bugs and feature requests and — whenever a release is shipped — complaints. Charlie suspects Pipe is used by housands of developers but there are only three other people contributing to the project actively. Between them they struggle between work and family to maintain the project. 
+
+Charlie uses Libraries.io to get more information about her project. Who's using it? What kind of applications is it used within? Which versions are they using? How is it deployed? What features are more commonly used? She uses this information to inform the project's roadmap: to prioritise new features and decide which features can be removed, to focus documentation and support processes.
+
+Charlie also uses Libraries.io to keep her project up to date. The project has 68 dependencies which she needs to monitor for vulnerability notices and patches, for version updates — inc. anything that might break anything in her own project — and for dependencies that have been abondoned or deprecated, in which case she needs to find an alterative library to use. 
+
+### Researcher/Extender (Charlie)
+_has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world._
+
+- Age: 42
+- Education: PhD 
+- Lives: New York
+- Works: Charitable Foundation
+- Role: Lead Developer
+- Likes: Jazz, Travelling, Photography
+
+Danni has been studying software ecosystems for six months as part of a grant-funded piece of work from a charitable foundation. She is contracted for the next two years to produce a academic paper and website identifying patterns that lead to open source projects becoming successful and falling out of favour. This data will be used by the foundation to prioritise projects within their target sectors that need support. 
+
+Charlie uses Libraries.io data to train a algorithms to identify patterns and uses the Libraries.io API to build an application that highlights popular projects and projects in decline.
