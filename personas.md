@@ -18,6 +18,14 @@ _A developer with a problem, she is looking for something to help solve it._
 - Role: Developer/Engineer
 - Likes: Cycling, Cats, Animé
 
+#### Common Tasks
+- Find a project by name ex. 'erubis'
+- Find a project by domiain/problem ex. 'a web framework for node'
+- Check # of dependencies for a project (first level and 'deep'/transisitve dependencies)
+- Check for licence incompatibilities
+- Check for project responsiveness, community, support
+- Save projects for use in later work
+
 Ada is a senior software developer, four years out of her computer science degree. She cycles from home into the office in Soho, London where she works at small but ambitious marketing agency who specialise in websites for new products and advertising campaigns. She works alongside four other developers and two front-end designers. The team has two account managers who support them, and two directors who do the 'creative' work. The agency is run on a tight budget, in a competitive market, pitching for projects against other small agencies. Like a lot of young agencies they rely on open source software to lower their production costs. 
 
 Ada uses Libraries.io to vet libraries she might want to use on a current or future project. Sometimes she hears about a project from a friend, reads about it on hackernews or sees talk about it at a conference. She's thinks it might come in handy but wants to know a little more: is the library is reliable, actively developed, is there good documentation and a community to support her if she comes unstuck? 
@@ -31,6 +39,15 @@ _A developer maitnianing a successful FOSS project. She's looking to understand 
 - Works: Large Technology Company
 - Role: Developer
 - Likes: Skiing, Hiking, Craft Beers 
+
+#### Common Tasks
+- Check project for updates in dependencies
+- Check content of dependency updates (breaking changes, security advisories, licence changes, new dependencies, new transitive dependencies)
+- Check PRs on project
+- Check issues on project
+- Make decisions on project direction (new features, deprecated features etc)
+- Build updates into project (dependencies, new code, documentation etc)
+- Publish new versions
  
 Charlie works at a large technology company. She works there company because the company allows her to work one day a week on open source projects. For three years Charlie has been a contributor to Pipe, an ORM library. Pipe has a *very* active community of users posting questions, ticketing bugs and feature requests and — whenever a release is shipped — complaints. Charlie suspects Pipe is used by housands of developers but there are only three other people contributing to the project actively. Between them they struggle between work and family to maintain the project. 
 
