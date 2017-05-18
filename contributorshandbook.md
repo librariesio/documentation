@@ -69,7 +69,7 @@ The simplest thing that you can do to help us is by filing good bug reports, so 
 #### Before Submitting a Bug Report
 
 * Double-check that the bug is persistent. The site is still in it's infancy and sometimes artifacts may appear and disappear.
-* Double-check the bug hasn't already been reported [on our issue tracker](https://github.com/librariesio/libraries.io/issues), they *should* be labelled `bug` or `bugsnag`.
+* Double-check the bug hasn't already been reported [on our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they *should* be labelled `bug` or `bugsnag`.
 
 If something hasn't been raised, you can go ahead and create a new issue using [the template](/issue_template.md). If you'd like to help investigate further or fix the bug just mention it in your issue and check out our [workflow](#workflow).
 
@@ -79,7 +79,7 @@ The next simplest thing you can do to help us is by telling us how we can improv
 
 #### Before Submitting an Enhancement
 
-* Check that the enhancement is not already [in our issue tracker](https://github.com/librariesio/libraries.io/labels/enhancement), they should be labelled 'enhancement'.
+* Check that the enhancement is not already [in our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be labelled 'enhancement'.
 
 If there isn't already an issue for feature then go ahead and create a new issue for it using the [template](/issue_template.md). If you'd like to work on the enhancement then just mention it in a comment and check out our [workflow](#workflow).
 
@@ -90,13 +90,13 @@ If you're into this zone then you need to understand a little more about what we
 #### Before Suggesting a Feature
 
 * Check that it aligns with [our strategy](strategy.md) and is specifically not in line with something we have said we will not do (for the moment this is anything to do with ranking *people*).
-* Check that the feature is not already [in our issue tracker](https://github.com/librariesio/libraries.io/issues), they should be tagged 'feature'.
-* Specifically check that it is not already a [funded commitment](https://github.com/librariesio/supporters/issues).
+* Check that the feature is not already [in our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be tagged 'feature'.
+* Specifically check that it is not already a [funded commitment](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio).
 
 If you're still thinking about that killer feature that no one else is thinking about then *please* create an issue for it using the [template](/issue_template.md).
 
 ### Your First Contribution
-You're in luck! We label issues that are ideal for first time contributors with [`first-pr`](hhttps://github.com/librariesio/libraries.io/labels/first-pr). For someone who wants something a little more meaty you might find an issue that needs some assistance with [`help wanted`](https://github.com/librariesio/libraries.io/labels/help%20wanted). Next you'll want to read our [workflow](#workflow).
+You're in luck! We label issues that are ideal for first time contributors with [`first-pr`](https://github.com/search?l=&q=is%3Aopen+is%3Aissue+org%3Alibrariesio+label%3Afirst-pr&ref=advsearch&type=Issues&utf8=%E2%9C%93). For someone who wants something a little more meaty you might find an issue that needs some assistance with [`help wanted`](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio+label%3A%22help+wanted%22&type=Issues). Next you'll want to read our [workflow](#workflow).
 
 ### Tackling Something Meatier
 
@@ -124,7 +124,7 @@ Members are encouraged to openly discuss their work, their lives, share views an
 [Google Hangouts](http://hangouts.google.com) is our preferred tool for video chat. We operate an [open hangout](http://bit.ly/2kWtYak) for anyone to jump into at any time to discuss issues face to face.
 
 ### Regular updates
-Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](https://github.com/librariesio/libraries.io/issues).
+Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio).
 
 Additionally we host an [open hangout](http://bit.ly/2kWtYak) for any contributor to join at *5pm UTC on a Tuesday* to discuss their work, the next week's priorities and to ask questions of other contributors regarding any aspect of the project. Again this is considered a *safe space* in which *there is no such thing as a stupid question*.
 
