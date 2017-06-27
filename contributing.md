@@ -126,7 +126,7 @@ Members are encouraged to openly discuss their work, their lives, share views an
 ### Regular updates
 Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio).
 
-Additionally we host an [open hangout](http://bit.ly/2kWtYak) for any contributor to join at *5pm UTC on a Tuesday* to discuss their work, the next week's priorities and to ask questions of other contributors regarding any aspect of the project. Again this is considered a *safe space* in which *there is no such thing as a stupid question*.
+Additionally we host an [open hangout](http://bit.ly/2kWtYak) for any contributor to join at *5pm BST/GMT on a Tuesday* to discuss their work, the next week's priorities and to ask questions of other contributors regarding any aspect of the project. Again this is considered a *safe space* in which *there is no such thing as a stupid question*.
 
 ### Mail
 The [core team](https://github.com/orgs/librariesio/teams/core) operate a mailing list for project updates. If you'd like to subscribe you'll find a form in the footer on [Libraries.io](http://libraries.io).
