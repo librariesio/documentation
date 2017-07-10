@@ -34,7 +34,8 @@ We have a number of ideas that we are interested in pursuing in 2018:
 - Monitoring system-level dependencies
 - Bridging from application to system-level dependencies
 - Federating search facilities to multiple providers
-- Adding code-search facilities
+- Improvements to [sourcerank](/overview#sourcerank) 
+- Gathering and sharing more metrics
 - Identifying individual contributors with rights to publish updates
 
 We will keep this document updated periodically. Please check our [issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio) for more information. 
