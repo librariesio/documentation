@@ -8,7 +8,7 @@ Thanks for considering contributing. These guidelines outline how to contribute 
 
 [What should I know Before I get started?](#what-should-i-know-before-i-get-started)
 * [Code of conduct](#code-of-conduct)
-* [Langauge](#langauge)
+* [Language](#language)
 * [Installation and setup](#setup)
 
 [How can I contribute?](#how-can-i-contribute)
