@@ -59,6 +59,8 @@ The main bits are:
 * [clojars json](https://github.com/librariesio/clojars-json) Convert clojars.org data to JSON
 * [Carthage Parser](https://github.com/librariesio/carthage_parser) Web service for parsing Carthage manifests
 * [Yarn Parser](https://github.com/librariesio/yarn-parser) Web service for parsing yarn.lock manifests
+* [Pydeps](https://github.com/librariesio/pydeps) Web service for calculating dependencies for python modules via pip
+* [Cocoapods API](https://github.com/librariesio/cocoapods-api) Web service for indexing cocoapods specs repo
 
 ### The API
 [Firehose](https://github.com/librariesio/firehose) Server Sent Events API for Libraries.io releases
