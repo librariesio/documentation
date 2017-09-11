@@ -14,6 +14,8 @@ Where all the services and APIs currently exist:
 - memcached
 - Sidekiq workers
 - cron
+- pydeps
+- cocoapods-api
 
 ### Online.net
 - Postgres
