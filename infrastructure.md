@@ -23,6 +23,9 @@ Where all the services and APIs currently exist:
 ### Bugsnag
 - error reporting
 
+### Appsignal
+- Performance monitoring
+
 ### Cloudflare
 - DNS
 - SSL
@@ -33,7 +36,11 @@ Where all the services and APIs currently exist:
 ### Google Apps
 - @libraries.io email
 
-### Other Free Heroku apps
+### Amazon S3
+- backups
+- sitemap hosting
+
+### Other Heroku apps
 - firehose node app
 - github sinatra app
 - carthageparser sinatra app
@@ -45,3 +52,6 @@ Where all the services and APIs currently exist:
 - justopensourced twitter bot
 - mix-deps-json elixir app
 - travis-rebuilder sinatra app
+- npm-update-stream node app
+- yarn-parser node app
+- gradle-parser node app

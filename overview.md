@@ -52,21 +52,22 @@ The main bits are:
 
 * [Libraries.io](https://github.com/librariesio/libraries.io) The main website and the data store.
 
-### Parsers
-* [Bibliothecary](https://github.com/librariesio/bibliothecary) parses manifest files
-* [Gemnasium Parser](https://github.com/librariesio/gemnasium-parser) An improved fork of gemnasium-parser
+### Parser services
 * [mix-deps-json](https://github.com/librariesio/mix-deps-json) Elixir parser for Hex dependency manifests
 * [clojars json](https://github.com/librariesio/clojars-json) Convert clojars.org data to JSON
 * [Carthage Parser](https://github.com/librariesio/carthage_parser) Web service for parsing Carthage manifests
 * [Yarn Parser](https://github.com/librariesio/yarn-parser) Web service for parsing yarn.lock manifests
 * [Pydeps](https://github.com/librariesio/pydeps) Web service for calculating dependencies for python modules via pip
 * [Cocoapods API](https://github.com/librariesio/cocoapods-api) Web service for indexing cocoapods specs repo
+* [gradle parser](https://github.com/librariesio/gradle-parser) web service for parsing gradle dependencies
+* [npm-update-stream](https://github.com/librariesio/npm-update-stream) web service for indexing npm update stream
 
 ### The API
 [Firehose](https://github.com/librariesio/firehose) Server Sent Events API for Libraries.io releases
 
 ### Libraries
-* [Languages](https://github.com/librariesio/languages) Just the language names and colors from github-lingust
+* [Bibliothecary](https://github.com/librariesio/bibliothecary) parses manifest files
+* [Gemnasium Parser](https://github.com/librariesio/gemnasium-parser) An improved fork of gemnasium-parser
 * [Semantic Range](https://github.com/librariesio/semantic_range) node-semver written in Ruby for comparison and inclusion of semantic versions and ranges.
 * [SemanticInterval](https://github.com/librariesio/semantic_interval) Turns Interval range syntax into Semantic Version range syntax
 * [License Compatibility](https://github.com/librariesio/license-compatibility) Checks compatibility between different licenses from SPDX
@@ -112,6 +113,7 @@ The main bits are:
 * [LibHub](https://github.com/librariesio/libhub) Minimalistic GitHub client for Node.js
 * [Favicon](https://github.com/librariesio/favicon) Generates Libraries.io favicons for a given colour or language
 * [First PR Bot](https://github.com/librariesio/firstprbot) Tweets whenever someone opens their first open source pull request on GitHub
+* [Languages](https://github.com/librariesio/languages) Just the language names and colors from github-lingust
 
 ## SourceRank
 SourceRank is the name for the algorithm that we use to index search results. The maximum score for SourceRank is currently around 30 points.
