@@ -16,6 +16,7 @@ Where all the services and APIs currently exist:
 - cron
 - pydeps
 - cocoapods-api
+- mix-deps-json elixir app
 
 ### Online.net
 - Postgres
@@ -51,7 +52,6 @@ Where all the services and APIs currently exist:
 - github-firehose node app
 - libby the libraries hubot
 - justopensourced twitter bot
-- mix-deps-json elixir app
 - travis-rebuilder sinatra app
 - npm-update-stream node app
 - yarn-parser node app
