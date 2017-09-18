@@ -19,6 +19,7 @@ Where all the services and APIs currently exist:
 
 ### Online.net
 - Postgres
+- Pypi Mirror
 
 ### Bugsnag
 - error reporting
