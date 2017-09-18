@@ -17,6 +17,9 @@ Where all the services and APIs currently exist:
 - pydeps
 - cocoapods-api
 - mix-deps-json elixir app
+- yarn-parser node app
+- gradle-parser node app
+- carthageparser sinatra app
 
 ### Online.net
 - Postgres
@@ -45,14 +48,9 @@ Where all the services and APIs currently exist:
 ### Other Heroku apps
 - firehose node app
 - github sinatra app
-- carthageparser sinatra app
 - clojars-json clojure app
-- firstprbot twitter bot
 - dispatch ruby app
 - github-firehose node app
-- libby the libraries hubot
 - justopensourced twitter bot
 - travis-rebuilder sinatra app
 - npm-update-stream node app
-- yarn-parser node app
-- gradle-parser node app
