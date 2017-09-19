@@ -47,10 +47,11 @@ Where all the services and APIs currently exist:
 - sitemap hosting
 
 ### Other Heroku apps
-- firehose node app
-- github sinatra app
+- lib2issues ruby app
 - dispatch ruby app
 - github-firehose node app
-- justopensourced twitter bot
-- travis-rebuilder sinatra app
+- firehose node app
+- slackin node app
+- lib2slack ruby app
 - npm-update-stream node app
+- travis-rebuilder sinatra app
