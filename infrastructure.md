@@ -20,6 +20,7 @@ Where all the services and APIs currently exist:
 - yarn-parser node app
 - gradle-parser node app
 - carthageparser sinatra app
+- clojars-json clojure app
 
 ### Online.net
 - Postgres
@@ -48,7 +49,6 @@ Where all the services and APIs currently exist:
 ### Other Heroku apps
 - firehose node app
 - github sinatra app
-- clojars-json clojure app
 - dispatch ruby app
 - github-firehose node app
 - justopensourced twitter bot
