@@ -24,6 +24,7 @@ Where all the services and APIs currently exist:
 - lib2issues ruby app
 - lib2slack ruby app
 - travis-rebuilder sinatra app
+- slackin node app
 
 ### Online.net
 - Postgres
@@ -53,5 +54,4 @@ Where all the services and APIs currently exist:
 - dispatch ruby app
 - github-firehose node app
 - firehose node app
-- slackin node app
 - npm-update-stream node app
