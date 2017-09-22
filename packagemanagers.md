@@ -29,6 +29,7 @@
 | Packagist | https://packagist.org | PHP | true | true | true |
 | PlatformIO | http://platformio.org | C++ | true | false | false |
 | Pub | https://pub.dartlang.org | Dart | true | true | true |
+| Puppet | https://forge.puppet.com | Puppet | true | true | false |
 | PyPI | https://pypi.python.org | Python | true | true | true |
 | Rubygems | https://rubygems.org | Ruby | true | true | true |
 | Shards | https://crystal-shards-registry.herokuapp.com/ | Crystal | false | false | true |
