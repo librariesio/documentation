@@ -28,6 +28,7 @@ Where all the services and APIs currently exist:
 - github-firehose node app
 - firehose node app
 - npm-update-stream node app
+- dispatch ruby app
 
 ### Online.net
 - Postgres
@@ -52,6 +53,3 @@ Where all the services and APIs currently exist:
 ### Amazon S3
 - backups
 - sitemap hosting
-
-### Other Heroku apps
-- dispatch ruby app
