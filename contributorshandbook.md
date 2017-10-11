@@ -41,10 +41,10 @@ By outlining our [mission and strategy](/strategy.md) we hope to give you more p
 Libraries.io currently caters for the needs of three distinct user groups:
 
 * Google: _is hungry for your linked datas so she can serve you up search traffic_
-* Searcher: _is a developer with a problem, she is looking for something to help solve it._ 
+* Searcher: _is a developer with a problem, she is looking for something to help solve it._
 * Maintainer: _has a project that is used within and/or incorporates open dependencies. She needs to ensure her project(s) are working as expected for users._
 
-These groups have been expanded into [personas](/personas.md) for contributors to reference. 
+These groups have been expanded into [personas](/personas.md) for contributors to reference.
 
 ## What Should I Know Before I Get Started?
 
@@ -91,7 +91,7 @@ If you're into this zone then you need to understand a little more about what we
 
 * Check that it aligns with [our strategy](strategy.md) and is specifically not in line with something we have said we will not do (for the moment this is anything to do with ranking *people*).
 * Check that the feature is not already [in our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be tagged 'feature'.
-* Specifically check that it is not already a [funded commitment](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio).
+* Specifically check that it is not already a [funded commitment](https://github.com/librariesio/supporters/issues).
 
 If you're still thinking about that killer feature that no one else is thinking about then *please* create an issue for it using the [template](/issue_template.md).
 
@@ -143,13 +143,13 @@ We have a Medium account at [@librariesio](https://medium.com/@librariesio) and 
 ## Who Are Libraries.io's Users?
 Libraries.io focusses on the following personas:
 
-### Google 
+### Google
 _Is hungry for linked data so she can serve you up search traffic_
 
-### 'Searcher' 
-_Is a developer with a problem, she is looking for something to help solve it._ 
+### 'Searcher'
+_Is a developer with a problem, she is looking for something to help solve it._
 
-### 'Producer' 
+### 'Producer'
 _Has a product or products that incorporates some free/open source dependencies. She needs to ensure the product(s) are well maintained, free of vulnerabilities and licence compatible._
 
 ### 'Maintainer'
