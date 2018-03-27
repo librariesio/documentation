@@ -9,7 +9,9 @@ Data gathered by Libraries.io is avaialble for download on [Zenodo](https://zeno
 
 ### Acccessing Libraries' Data Programatically
 
-Libraries'[API](https://libraries.io/api) provides up-to-date information for a project, repository or user. Data will soon be avaialble via Google BigQuery as apart of their public datasets programme. 
+Libraries'[API](https://libraries.io/api) provides up-to-date information for a project, repository or user. 
+
+Data is also avaialble via Google BigQuery as apart of their (public datasets programme)[https://console.cloud.google.com/launcher/details/libraries-io/librariesio]
 
 ### Licence
 
@@ -18,9 +20,3 @@ All data gathered by Libraries.io is provided under a Creative Commons, Attribut
 ### Requests
 
 Our strategy is to gather and share information about open source software to create a stronger ecosystem and help developers make more informated decisions about the software they use. If there's some data that Libraries.io does not currently collect that you would like to use in your research, application or service please [create a ticket for it](https://github.com/librariesio/metrics/issues/new). 
-
-
-
-
-
-
