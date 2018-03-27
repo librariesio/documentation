@@ -15,28 +15,29 @@ We do this by tackling three problems:
 
 * Discovery: _Helping developers make faster, more informed decisions about the software that they use._
 * Maintainability: _Helping maintainers understand more about the software they depend upon and the consumers of their software._
-* Sustainability: _Supporting undervalued software by highlighting shortfalls in contribution and funneling support to them._
+* Sustainability: _Supporting undervalued software by providing a scalable and sustainable revenue for maintainers_
 
-If you'd like to know why we think this is the right approach then check out [our strategy](/strategy.md).
+Libraries.io is the place that we attempt to solve the discovery problem for users, we solve the other two at our parent company [Tidelift](https://tidelift.com). If you'd like to know why we think this is the right approach then check out [our strategy](/strategy.md).
+
+### Who are Tidelift?
+In October 2016 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2017 and continue to support Libraries.io as part of their core philosophy and strategy.  
 
 ## Who is Libraries.io For?
 
 Libraries.io currently caters for the needs of three groups:
 
-* Google: is hungry for your linked datas so she can serve you up search traffic
+* Google: is hungry for your linked datas so she can serve you up search traffic.
 * Searcher: is a developer with a problem, she is looking for something to help solve it.
-* Maintainer: has a project that is used within and/or incorporates open dependencies. She needs to ensure her project(s) are working as expected for users.
 * Extender: has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world.
 
-
-These groups have been expanded into [personas](/personas.md) for contributors to reference.
+These groups have been expanded into [personas](/personas.md) for contributors to reference in their work.
 
 ## How Does Libraries.io Work?
 Libraries.io collects data about software and the frameworks, plugins and tools they depend upon which we collectively call libraries.
 
 Everything in Libraries.io begins with [package managers](/packagemanagers.md), on a regular basis background tasks find new or updated libraries from each of those packages managers. Each library is stored as a project alongside any data we can gleam from the package manager. If the package manager provides a link to a hosted revision control service like GitHub then Libraries.io fetches yet more data from there.
 
-Using the data collected we then calculate the [SourceRank](/overview#sourcerank), this value is used to index the project in search results. Next we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities etc. to maintainers who depend on a given library. Finally we highlight undervalued and under-supported libraries, guiding maintainers toward projects that they could contribute to that would have a direct benefit on their own work.
+Using the data collected we then calculate the [SourceRank](/overview#sourcerank), this value is used to index the project in search results. Next we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities etc.
 
 If you'd like an overview of the project, including a description of each of the repositories in the Libraries.io organisation and how they work together then check out our [overview](/overview.md).
 
