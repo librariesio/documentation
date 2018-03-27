@@ -8,7 +8,7 @@ Thanks for considering contributing. These guidelines outline how to contribute 
 
 [What should I know Before I get started?](#what-should-i-know-before-i-get-started)
 * [Code of conduct](#code-of-conduct)
-* [Langauge](#langauge)
+* [Language](#language)
 * [Installation and setup](#setup)
 
 [How can I contribute?](#how-can-i-contribute)
@@ -37,14 +37,16 @@ By outlining our [mission and strategy](/strategy.md) we hope to give you more p
 * Maintainability: _Helping maintainers understand more about the software they depend upon and the consumers of their software._
 * Sustainability: _Supporting undervalued software by highlighting shortfalls in contribution and funneling support to them._
 
+The first of these problems is our foccus for Libraries.io. The other two we are trying to tackle at [Tidelift](https://tidelift.com).
+
 ## Who is Libraries.io For?
 Libraries.io currently caters for the needs of three distinct user groups:
 
 * Google: _is hungry for your linked datas so she can serve you up search traffic_
-* Searcher: _is a developer with a problem, she is looking for something to help solve it._ 
+* Searcher: _is a developer with a problem, she is looking for something to help solve it._
 * Maintainer: _has a project that is used within and/or incorporates open dependencies. She needs to ensure her project(s) are working as expected for users._
 
-These groups have been expanded into [personas](/personas.md) for contributors to reference. 
+These groups have been expanded into [personas](/personas.md) for contributors to reference.
 
 ## What Should I Know Before I Get Started?
 
@@ -69,7 +71,7 @@ The simplest thing that you can do to help us is by filing good bug reports, so 
 #### Before Submitting a Bug Report
 
 * Double-check that the bug is persistent. The site is still in it's infancy and sometimes artifacts may appear and disappear.
-* Double-check the bug hasn't already been reported [on our issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they *should* be labelled `bug` or `bugsnag`.
+* Double-check the bug hasn't already been reported [on our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they *should* be labelled `bug` or `bugsnag`.
 
 If something hasn't been raised, you can go ahead and create a new issue using [the template](/issue_template.md). If you'd like to help investigate further or fix the bug just mention it in your issue and check out our [workflow](#workflow).
 
@@ -79,7 +81,7 @@ The next simplest thing you can do to help us is by telling us how we can improv
 
 #### Before Submitting an Enhancement
 
-* Check that the enhancement is not already [in our issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be labelled 'enhancement'.
+* Check that the enhancement is not already [in our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be labelled 'enhancement'.
 
 If there isn't already an issue for feature then go ahead and create a new issue for it using the [template](/issue_template.md). If you'd like to work on the enhancement then just mention it in a comment and check out our [workflow](#workflow).
 
@@ -90,13 +92,12 @@ If you're into this zone then you need to understand a little more about what we
 #### Before Suggesting a Feature
 
 * Check that it aligns with [our strategy](strategy.md) and is specifically not in line with something we have said we will not do (for the moment this is anything to do with ranking *people*).
-* Check that the feature is not already [in our issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be tagged 'feature'.
-* Specifically check that it is not already a [funded commitment](https://github.com/librariesio/supporters/issues).
+* Check that the feature is not already [in our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be tagged 'feature'.
 
 If you're still thinking about that killer feature that no one else is thinking about then *please* create an issue for it using the [template](/issue_template.md).
 
 ### Your First Contribution
-You're in luck! We label issues that are ideal for first time contributors with [`first-pr`](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Alibrariesio+label%3A%22first-pr%22). For someone who wants something a little more meaty you might find an issue that needs some assistance with [`help wanted`](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Alibrariesio+label%3A%22help+wanted%22). Next you'll want to read our [workflow](#workflow).
+You're in luck! We label issues that are ideal for first time contributors with [`first-pr`](https://github.com/search?l=&q=is%3Aopen+is%3Aissue+org%3Alibrariesio+label%3Afirst-pr&ref=advsearch&type=Issues&utf8=%E2%9C%93). For someone who wants something a little more meaty you might find an issue that needs some assistance with [`help wanted`](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio+label%3A%22help+wanted%22&type=Issues). Next you'll want to read our [workflow](#workflow).
 
 ### Tackling Something Meatier
 
@@ -105,7 +106,7 @@ Tickets are labeled by size, skills required and to indicate workflow. Details c
 To get you started you might want to check out issues concerning [documentation](https://github.com/librariesio/documentation/issues/), [user experience](https://github.com/librariesio/libraries.io/labels/ux), [visual design](https://github.com/librariesio/libraries.io/issues/labels/visual%20design) or perhaps something already [awaiting help](https://github.com/librariesio/libraries.io/labels/help%20wanted). You may find the following useful:
 
 * Our [strategy](/strategy.md) which outlines what our goals are, how we are going to achieve those goals and what we are specifically going to avoid.
-* A [techncial overview](/overview.md) of the components that make up the Libraries.io project and run the [https://libraries.io](https://libraries.io) site.
+* An [overview](/overview.md) of the components that make up the Libraries.io project and run the [https://libraries.io](https://libraries.io) site.
 
 ## How Can I Talk To Other Contributors?
 
@@ -124,7 +125,7 @@ Members are encouraged to openly discuss their work, their lives, share views an
 [Google Hangouts](http://hangouts.google.com) is our preferred tool for video chat. We operate an [open hangout](http://bit.ly/2kWtYak) for anyone to jump into at any time to discuss issues face to face.
 
 ### Regular updates
-Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio).
+Contributors are encouraged to share what they're working on. We do this through daily or weekly updates in the `#general` channel on Slack. Updates should take the format 'currently working on X, expecting to move onto Y, blocked on Z' where x, y and z are issues in our [issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio).
 
 Additionally we host an [open hangout](http://bit.ly/2kWtYak) for any contributor to join at *5pm BST/GMT on a Tuesday* to discuss their work, the next week's priorities and to ask questions of other contributors regarding any aspect of the project. Again this is considered a *safe space* in which *there is no such thing as a stupid question*.
 
@@ -143,23 +144,14 @@ We have a Medium account at [@librariesio](https://medium.com/@librariesio) and 
 ## Who Are Libraries.io's Users?
 Libraries.io focusses on the following personas:
 
-### Google 
+### Google
 _Is hungry for linked data so she can serve you up search traffic_
 
-### 'Searcher' 
-_Is a developer with a problem, she is looking for something to help solve it._ 
-
-### 'Producer' 
-_Has a product or products that incorporates some free/open source dependencies. She needs to ensure the product(s) are well maintained, free of vulnerabilities and licence compatible._
-
-### 'Maintainer'
-_Is a developer with a successful free/open source project. She's looking to understand more about those who use her project, attract more contributors and manage their contributions well._
+### 'Searcher'
+_Is a developer with a problem, she is looking for something to help solve it._
 
 ### 'Extender'
 _Has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world._
-
-### 'Overlord'
-_Has a vast empire of people, products and projects. Some of which she publishes as open source, some are proprietary. She wants to ensure that her policies regarding the use of dependencies are adhered to and that her team are as efficient as possible._
 
 ## Workflow
 In general we use [GitHub](https://help.github.com/) and [Git](https://git-scm.com/docs/gittutorial) to support our workflow. If you are unfamiliar with those tools then you should check them out until you feel you have a basic understanding of GitHub and a working understanding of Git. Specifically you should understand how forking, branching, committing, PRing and merging works.
@@ -198,5 +190,6 @@ We appreciate that it may be difficult to offer constructive criticism, but it i
 
 #### Merging
 As we keep the `master` branch in a permanent state of 'deployment ready' once-merged your contribution will be live on the next deployment.
+
 #### Deploying
 Any member of the [deployers](https://github.com/orgs/librariesio/teams/deployers) team are able to redeploy the site. If you require a deployment then you might find one of them in our `#general` [chat channel on Slack](slack.libraries.io).
