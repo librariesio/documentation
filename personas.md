@@ -30,31 +30,6 @@ Ada is a senior software developer, four years out of her computer science degre
 
 Ada uses Libraries.io to vet libraries she might want to use on a current or future project. Sometimes she hears about a project from a friend, reads about it on hackernews or sees talk about it at a conference. She's thinks it might come in handy but wants to know a little more: is the library is reliable, actively developed, is there good documentation and a community to support her if she comes unstuck? 
 
-### Maintainer (Belinda)
-_A developer maitnianing a successful FOSS project. She's looking to understand more about those who use her project, attract more contributors and manage their contributions well._
-
-- Age: 28
-- Education: MSc 
-- Lives: Austin
-- Works: Large Technology Company
-- Role: Developer
-- Likes: Skiing, Hiking, Craft Beers 
-
-#### Common Tasks
-- Check project for updates in dependencies
-- Check content of dependency updates (breaking changes, security advisories, licence changes, new dependencies, new transitive dependencies)
-- Check PRs on project
-- Check issues on project
-- Make decisions on project direction (new features, deprecated features etc)
-- Build updates into project (dependencies, new code, documentation etc)
-- Publish new versions
- 
-Charlie works at a large technology company. She works there company because the company allows her to work one day a week on open source projects. For three years Charlie has been a contributor to Pipe, an ORM library. Pipe has a *very* active community of users posting questions, ticketing bugs and feature requests and — whenever a release is shipped — complaints. Charlie suspects Pipe is used by housands of developers but there are only three other people contributing to the project actively. Between them they struggle between work and family to maintain the project. 
-
-Charlie uses Libraries.io to get more information about her project. Who's using it? What kind of applications is it used within? Which versions are they using? How is it deployed? What features are more commonly used? She uses this information to inform the project's roadmap: to prioritise new features and decide which features can be removed, to focus documentation and support processes.
-
-Charlie also uses Libraries.io to keep her project up to date. The project has 68 dependencies which she needs to monitor for vulnerability notices and patches, for version updates — inc. anything that might break anything in her own project — and for dependencies that have been abondoned or deprecated, in which case she needs to find an alterative library to use. 
-
 ### Researcher/Extender (Charlie)
 _has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world._
 
