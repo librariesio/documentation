@@ -37,6 +37,8 @@ By outlining our [mission and strategy](/strategy.md) we hope to give you more p
 * Maintainability: _Helping maintainers understand more about the software they depend upon and the consumers of their software._
 * Sustainability: _Supporting undervalued software by highlighting shortfalls in contribution and funneling support to them._
 
+The first of these problems is our foccus for Libraries.io. The other two we are trying to tackle at [Tidelift](https://tidelift.com).
+
 ## Who is Libraries.io For?
 Libraries.io currently caters for the needs of three distinct user groups:
 
@@ -91,7 +93,6 @@ If you're into this zone then you need to understand a little more about what we
 
 * Check that it aligns with [our strategy](strategy.md) and is specifically not in line with something we have said we will not do (for the moment this is anything to do with ranking *people*).
 * Check that the feature is not already [in our issue tracker](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+org%3Alibrariesio), they should be tagged 'feature'.
-* Specifically check that it is not already a [funded commitment](https://github.com/librariesio/supporters/issues).
 
 If you're still thinking about that killer feature that no one else is thinking about then *please* create an issue for it using the [template](/issue_template.md).
 
@@ -149,17 +150,8 @@ _Is hungry for linked data so she can serve you up search traffic_
 ### 'Searcher'
 _Is a developer with a problem, she is looking for something to help solve it._
 
-### 'Producer'
-_Has a product or products that incorporates some free/open source dependencies. She needs to ensure the product(s) are well maintained, free of vulnerabilities and licence compatible._
-
-### 'Maintainer'
-_Is a developer with a successful free/open source project. She's looking to understand more about those who use her project, attract more contributors and manage their contributions well._
-
 ### 'Extender'
 _Has her own ideas. She wants access to the raw data so that she can mash up her own service and offer it to the world._
-
-### 'Overlord'
-_Has a vast empire of people, products and projects. Some of which she publishes as open source, some are proprietary. She wants to ensure that her policies regarding the use of dependencies are adhered to and that her team are as efficient as possible._
 
 ## Workflow
 In general we use [GitHub](https://help.github.com/) and [Git](https://git-scm.com/docs/gittutorial) to support our workflow. If you are unfamiliar with those tools then you should check them out until you feel you have a basic understanding of GitHub and a working understanding of Git. Specifically you should understand how forking, branching, committing, PRing and merging works.
@@ -198,5 +190,6 @@ We appreciate that it may be difficult to offer constructive criticism, but it i
 
 #### Merging
 As we keep the `master` branch in a permanent state of 'deployment ready' once-merged your contribution will be live on the next deployment.
+
 #### Deploying
 Any member of the [deployers](https://github.com/orgs/librariesio/teams/deployers) team are able to redeploy the site. If you require a deployment then you might find one of them in our `#general` [chat channel on Slack](slack.libraries.io).

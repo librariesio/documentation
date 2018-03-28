@@ -1,7 +1,7 @@
 ## Strategy
 *Our mission is to raise the quality of all software.*
 
-We will do this by raising the quality and frequency of contributions to free and open source software; the services, frameworks, plugins and tools we collectively refer to as *libraries*. Libraries are published freely under a copyleft license by *maintainers*, maintainers work with *contributors* to develop their projects which are used by *consumers*. Consumers utilise libraries in their own software, for which they may become a contributor or maintainer in the future.
+We will do this by raising the quality and frequency of contributions to free and open source software; the services, frameworks, plugins and tools we collectively refer to as *libraries*. Libraries are published freely under a copyleft license by *maintainers*, maintainers work with *contributors* to develop their projects which are used by *users*. Users utilise libraries in their own software, for which they may become a contributor or maintainer in the future.
 
 Specifically we tackle three distinct problems:
 
@@ -24,11 +24,11 @@ Similarly we can help maintainers by reflecting the state of the ecosystem back 
 By building tools and by offering them to those working on free and open source software without charge, we will ensure that maintainers and consumers get maximum value from the ecosystem. Consumers will be better equipped to see the value they extract from their dependencies. With this knowledge and a little time saved they might consider contributing back and, guided by their self-interest, may choose to support the projects that support them...
 
 ### Sustainability
-_Supporting undervalued software by highlighting shortfalls in contribution and funneling support to them._
+_Supporting undervalued software by createing a new, scalable and sustainable stream of income for maintianers._
 
-The free and open source ecosystem has grown almost exponentially over the last ten years. We see the same patterns in this system as we see in nature. Projects rise and fall in popularity, sometimes making way for others. In doing so they leave a legacy, a legacy that can become a risk for us all. Who's supporting these projects?
+Free and open source software has grown exponentially over the last ten years. And we're indebted to the creators whos work we build applications, services and businesses on top of. But too frequently the maintainers of these projects work individually or in small groups on projects in their spare time with little to no direct support. We want to support maintainers with a new, scalable, sustainable source of revenue so that they can choose to work on open source project rather than subsidising their passion. 
 
-By highlighting libraries that are undervalued and under-supported, to those who will directly benefit by contributing, we can increase the number of contributors to these projects. Our hope is that by focusing search and by creating tools to help maintainers we can turbo-charge contributors and contributions.
+### Who are Tidelift?
+In October 2017 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2018 and continue to support Libraries.io as part of their core philosophy and strategy. 
 
-## What We Won't Do
-We do not believe that profiling any one individual will benefit the ecosystem. People predominantly commit their time to free and open source software on a voluntary basis. With that in mind everyone who does so should be considered, regarded and thanked equally.
+At Tidelift we focus on solving the problems aassociated with the maintainablity and sustianability parts of this strategy. Libraries.io is _solely_ concerned with solving the issues around discovery of open source software, directly and through partners using our services and data. 
