@@ -29,6 +29,6 @@ _Supporting undervalued software by createing a new, scalable and sustainable st
 Free and open source software has grown exponentially over the last ten years. And we're indebted to the creators whos work we build applications, services and businesses on top of. But too frequently the maintainers of these projects work individually or in small groups on projects in their spare time with little to no direct support. We want to support maintainers with a new, scalable, sustainable source of revenue so that they can choose to work on open source project rather than subsidising their passion. 
 
 ### Who are Tidelift?
-In October 2016 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2017 and continue to support Libraries.io as part of their core philosophy and strategy. 
+In October 2017 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2017 and continue to support Libraries.io as part of their core philosophy and strategy. 
 
 At Tidelift we focus on solving the problems aassociated with the maintainablity and sustianability parts of this strategy. Libraries.io is _solely_ concerned with solving the issues around discovery of open source software, directly and through partners using our services and data. 
