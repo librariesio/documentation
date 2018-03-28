@@ -20,7 +20,7 @@ We do this by tackling three problems:
 Libraries.io is the place that we attempt to solve the discovery problem for users, we solve the other two at our parent company [Tidelift](https://tidelift.com). If you'd like to know why we think this is the right approach then check out [our strategy](/strategy.md).
 
 ### Who are Tidelift?
-In October 2017 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2017 and continue to support Libraries.io as part of their core philosophy and strategy.  
+In October 2017 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2018 and continue to support Libraries.io as part of their core philosophy and strategy.  
 
 ## Who is Libraries.io For?
 
