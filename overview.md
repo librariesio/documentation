@@ -17,10 +17,10 @@
 
 
 ### Package Managers
-Everything in Libraries.io begins with [package managers](/packagemanagers.md), on a regular basis background tasks find new or updated libraries from each of those packages managers, libraries cannot be added to the system unless they exist on one of those package managers.
+Everything in Libraries.io begins with [package managers](/packagemanagers.md). On a regular basis, background tasks find new or updated libraries from each of those packages managers. Libraries cannot be added to the system unless they exist on one of those package managers.
 
 #### Projects, Versions and Dependencies
-Each library is stored in the [Project](https://github.com/librariesio/libraries.io/blob/master/app/models/project.rb) table, if that library's package manager supports published version numbers each new version is stored in the [Version](https://github.com/librariesio/libraries.io/blob/master/app/models/version.rb) table and if the package manager supports library dependencies then they are recorded in the [Dependency](https://github.com/librariesio/libraries.io/blob/master/app/models/dependency.rb) table.
+Each library is stored in the [Project](https://github.com/librariesio/libraries.io/blob/master/app/models/project.rb) table. I a library's package manager supports published version numbers, each new version is stored in the [Version](https://github.com/librariesio/libraries.io/blob/master/app/models/version.rb) table; and if the package manager supports library dependencies, then they are recorded in the [Dependency](https://github.com/librariesio/libraries.io/blob/master/app/models/dependency.rb) table.
 
 ### Repositories
 Libraries.io will then augment package manager data with data from a Repository if one is referenced in the package manager. GitHub repositories will be downloaded and stored in the [Repository](https://github.com/librariesio/libraries.io/blob/master/app/models/repository.rb) table, on creation a background Sidekiq task is kicked off to download related information from GitHub including:
