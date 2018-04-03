@@ -35,14 +35,14 @@ These groups have been expanded into [personas](/personas.md) for contributors t
 ## How Does Libraries.io Work?
 Libraries.io collects data about software and the frameworks, plugins and tools they depend upon which we collectively call libraries.
 
-Everything in Libraries.io begins with [package managers](/packagemanagers.md), on a regular basis background tasks find new or updated libraries from each of those packages managers. Each library is stored as a project alongside any data we can gleam from the package manager. If the package manager provides a link to a hosted revision control service like GitHub then Libraries.io fetches yet more data from there.
+Everything in Libraries.io begins with [package managers](/packagemanagers.md). On a regular basis, background tasks find new or updated libraries from each of those packages managers. Each library is stored as a project, alongside any data we can gleam from the package manager. If the package manager provides a link to a hosted revision control service like GitHub, then Libraries.io fetches yet more data from there.
 
-Using the data collected we then calculate the [SourceRank](/overview#sourcerank), this value is used to index the project in search results. Next we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities etc.
+Using the collected data, we then calculate the [SourceRank](/overview#sourcerank), which is used to index the project in search results. Next, we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities, etc.
 
-If you'd like an overview of the project, including a description of each of the repositories in the Libraries.io organisation and how they work together then check out our [overview](/overview.md).
+If you'd like an overview of the project, including a description of each of the repositories in the Libraries.io organisation and how they work together, then check out our [overview](/overview.md).
 
 ## How Can I Help?
-If you wish to contribute to Libraries.io must agree to our [code of conduct](/CODE_OF_CONDUCT.md). In short they say: be excellent to one another. If you're able to abide by those terms then check out our [contributor's handbook](/contributorshandbook.md).
+If you wish to contribute to Libraries.io, you must agree to our [code of conduct](/CODE_OF_CONDUCT.md). In short, it says: be excellent to one another. If you're able to abide by those terms, then check out our [contributor's handbook](/contributorshandbook.md).
 
 ## Improving This Document
-You can view the source for this document and the rest of our documentation [on GitHub](https://github.com/librariesio/documentation). You can also view, comment upon and create new issues concerning this documentation [on our issue tracker](https://github.com/librariesio/documentation). For more information about contributing to Libraries.io please read our [contributor's handbook](/contributorshandbook.md).
+You can view the source for this document and the rest of our documentation [on GitHub](https://github.com/librariesio/documentation). You can also view, comment upon and create new issues concerning this documentation [on our issue tracker](https://github.com/librariesio/documentation/issues). For more information about contributing to Libraries.io, please read our [contributor's handbook](/contributorshandbook.md).
