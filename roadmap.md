@@ -5,10 +5,10 @@ We will keep this document updated periodically. Please check our [issue tracker
 ### 2018 Commitments
 As part of Tidelift, the goals for Libraries.io become more focussed on solving discovery issues for our users. Our priorities for 2018 are:
 
-- Redesigning Libraries.io to provide a more didscovery-focussed user experience,
+- Redesigning Libraries.io to provide a more discovery-focussed user experience
 - Adding time-series data to packages indexed by Libraries.io
-- Expanding and improving our project quality metrics and indicators (known as Sourcerank),
-- Improving our search facilities to include langauge, problem and domain-specific results,
+- Expanding and improving our project quality metrics and indicators (known as [SourceRank](/overview#sourcerank)),
+- Improving our search facilities to include language, problem and domain-specific results,
 - Federating our search and data facilities to users through our API,
 - Continuing to support researchers through open access to data gathered by Libraries.io
 
@@ -29,7 +29,7 @@ The [supporters repository](https://github.com/librariesio/supporters/issues) co
 - Releasing metric and dependency graph information 
 - Adding external metrics in Libraries.io meta-data
 
-There were also a number of non, developer centered goals. Mainly these are about raising demand for and usage of Libraries.io as a service and as a source of data.
+There were also a number of non-developer centered goals. Mainly these are about raising demand for and usage of Libraries.io as a service and as a source of data.
 
 ### 2017 Additional Goals
 

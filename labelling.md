@@ -4,7 +4,7 @@ Labelling is a key part of our workflow. We label issues by size, type or skills
 ### Size
 In the following *day* and *week* mean 'working approximately 7.5 hours per day, five days a week'. That is not to say any contributor is expected to work full-time on the project, but it should provide a truer sense of scale.
 
-* `micro` tickets require a trivial amount of work for someone with an existing, working environment and no longer than two hours for someone starting afresh. It is likely that a micro ticket might also be perfect at a `first-pr` also (see below).
+* `micro` tickets require a trivial amount of work for someone with an existing, working environment and no longer than two hours for someone starting afresh. It is likely that a micro ticket might also be perfect as a `first-pr` also (see below).
 * `small` tickets require a an amount of work to replicate an issue and/or *should* take no longer than four hours for someone with a reasonable appreciation of the skills needed, the context and the project in general.
 * `medium` tickets require a reasonable amount of work to replicate an issue and/or *should* take no longer than a day or two for someone with a good understanding of the skills needed, the context and the project in general.
 * `large` tickets require a considerable amount of work to replicate an issue and/or *will* take longer than a day or two for someone with an excellent understanding of the skills needed, the context and the project in general. It is advised that anyone embarking upon a large ticket discusses it with others through comments, in our public slack channel or at a weekly open call. See more about [contributing](/contributorshandbook.md).
