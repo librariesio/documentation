@@ -21,7 +21,7 @@ _A developer with a problem, she is looking for something to help solve it._
 #### Common Tasks
 - Find a project by name ex. 'erubis'
 - Find a project by domiain/problem ex. 'a web framework for node'
-- Check # of dependencies for a project (first level and 'deep'/transisitve dependencies)
+- Check # of dependencies for a project (first level and 'deep'/transitive dependencies)
 - Check for licence incompatibilities
 - Check for project responsiveness, community, support
 - Save projects for use in later work

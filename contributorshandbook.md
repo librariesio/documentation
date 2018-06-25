@@ -57,7 +57,7 @@ Libraries.io is an open and inclusive [community of people](https://github.com/o
 We communicate predominately in English. Contributions to the project should be made with English as the first language. We are happy for members of the community to communicate in a language other than English in chat, email and video but be aware that this might be considered exclusive by other members of the community.
 
 ### Documentation
-Documentation for the project as a whole is available at [docs.libraries.io](https://docs.libraries.io). These pages are generated from the [documentation](https://github.com/librariesio/documentation) repo. Documentation that needs to be in every repo is replicated in [required-files](https://github.com/librariesio/required-files) (currently limited to [GitHub templates](https://github.com/blog/2111-issue-and-pull-request-templates)). Otherwise documentation will be specific to that repo. For example the main [Libraries.io](https://github.com/librariesio/libraries.io) `README.md` contains information about installing and running the main rails application.
+Documentation for the project as a whole is available at [docs.libraries.io](https://docs.libraries.io). These pages are generated from the [documentation](https://github.com/librariesio/documentation) repo. Documentation that needs to be in every repo is replicated in [required-files](https://github.com/librariesio/required-files) (including [GitHub templates](https://github.com/blog/2111-issue-and-pull-request-templates)). Otherwise documentation will be specific to that repo. For example the main [Libraries.io](https://github.com/librariesio/libraries.io) `README.md` contains information about installing and running the main rails application.
 
 ### Setup
 If you wish to make contributions to Libraries.io then you'll need a local version of the site to test. You can find instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/librariesio/libraries.io/blob/master/README.md#getting-started).
@@ -142,7 +142,7 @@ We have a Facebook page at [@libraries.io](https://www.facebook.com/libraries.io
 We have a Medium account at [@librariesio](https://medium.com/@librariesio) and once again it is used to reflect news, events and musings by contributors rather than a direct method of communication. Contributors are encouraged to reference @librariesio in a post when talking about the project, so that we may recommend it if appropriate. Again the account is moderated and protected by the [core team](https://github.com/orgs/librariesio/teams/core).
 
 ## Who Are Libraries.io's Users?
-Libraries.io focusses on the following personas:
+Libraries.io focusses on the following personas ([elaborated here](/personas.md)):
 
 ### Google
 _Is hungry for linked data so she can serve you up search traffic_
@@ -178,7 +178,7 @@ If it is possible to comment your contribution — for instance if you are contr
 When committing to a branch be sure to use plain, simple language that describes the incremental changes made on the branch toward the overall goal. Avoid unnecessary complexity. Simplify whenever possible. Assume a reasonable but not comprehensive knowledge of the tools, techniques and context of your work.
 
 #### Testing
-When adding or fixing functionality, tests should be added to help reduce future regressions and breakage. All tests are ran automatically when new commits are pushed to a branch. Pull requests with broken/missing tests are not likely to be merged.
+When adding or fixing functionality, tests should be added to help reduce future regressions and breakage. All tests are run automatically when new commits are pushed to a branch. Pull requests with broken/missing tests are not likely to be merged.
 
 #### Submitting for Review
 Once a piece of work (in a branch) is complete it should be readied for review. This is your last chance to ensure that your contribution is [properly tested](#testing). If you are contributing code it is likely your contribution will be rejected if it would lower the test-coverage. Once this is done you can submit a pull-request following the [template](/pull_request_template.md).
