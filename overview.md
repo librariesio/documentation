@@ -35,7 +35,7 @@ Libraries.io will then augment package manager data with data from a Repository 
 Some package managers that don't have a concept of published versions (like Go and Bower), often they will fall back to using tags from a source repository if available, Libraries.io attempts to use GitHub tags as a fallback for all package managers that don't provide version information.
 
 ### Licenses
-License names are ran through [SPDX](https://github.com/librariesio/spdx). This standardises the many different ways of writing the same licenses into a single version, which is then used for filtering in search and listing on https://libraries.io/licenses. A library can have multiple licenses as it may other libraries with conditions that are enforced upward. If a project doesn't have any license data from the package manager then it will fall back to using the (singular) Repository license.
+License names are ran through [SPDX](https://github.com/librariesio/spdx). This standardises the many different ways of writing the same licenses into a single version, which is then used for filtering in search and listing on https://libraries.io/licenses. A library can have multiple licenses as it may contain other libraries with conditions that are enforced upward. If a project doesn't have any license data from the package manager then it will fall back to using the (singular) Repository license.
 
 If a project has a non-standard or commercial license it's currently normalized to "Other" and is not indexed in search.
 

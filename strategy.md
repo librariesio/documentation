@@ -1,7 +1,7 @@
 ## Strategy
 *Our mission is to raise the quality of all software.*
 
-We will do this by raising the quality and frequency of contributions to free and open source software; the services, frameworks, plugins and tools we collectively refer to as *libraries*. Libraries are published freely under a copyleft license by *maintainers*, maintainers work with *contributors* to develop their projects which are used by *users*. Users utilise libraries in their own software, for which they may become a contributor or maintainer in the future.
+We will do this by raising the quality and frequency of contributions to free and open source software; the services, frameworks, plugins and tools we collectively refer to as *libraries*. Libraries are published freely by *maintainers*, maintainers work with *contributors* to develop their projects which are used by *users*. Users utilise libraries in their own software, for which they may become a contributor or maintainer in the future.
 
 Specifically we tackle three distinct problems:
 
@@ -10,7 +10,7 @@ _Helping people make faster, more informed decisions about the software that the
 
 We are increasingly exploring smaller and smaller niches in modern software development. This is a good thing. However the majority of distribution channels do not provide sufficient tools for developers to discover libraries that could be valuable to them. Similarly they do not provide adequate information for individuals to judge the merit of one library over another when they tackle similar issues or solve similar problems.
 
-When presented with this challenge developers often react by 'scratching their own itch'; developing something from base principles and publishing it using a copyleft license. In the process they might poorly navigate issues that have already been successfully addressed by others. This leads not only to a replication of effort but potentially lowers the overall quality of freely available software while further exacerbating the problem for others.
+When presented with this challenge developers often react by 'scratching their own itch'; developing something from base principles and publishing it. In the process they might poorly navigate issues that have already been successfully addressed by others. This leads not only to a replication of effort but potentially lowers the overall quality of freely available software while further exacerbating the problem for others.
 
 By building a utility service for indexing and surfacing search results across any distribution channel, and by federating this service back through these channels we will turn the floodlight into a spotlight: Narrowing the focus of the community on adding value, accelerating convergence toward an accepted best practice or tool and thus raise the quality of freely available software.  
 
