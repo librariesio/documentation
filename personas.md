@@ -40,6 +40,6 @@ _has her own ideas. She wants access to the raw data so that she can mash up her
 - Role: Lead Developer
 - Likes: Jazz, Travelling, Photography
 
-Danni has been studying software ecosystems for six months as part of a grant-funded piece of work from a charitable foundation. She is contracted for the next two years to produce a academic paper and website identifying patterns that lead to open source projects becoming successful and falling out of favour. This data will be used by the foundation to prioritise projects within their target sectors that need support. 
+Charlie has been studying software ecosystems for six months as part of a grant-funded piece of work from a charitable foundation. She is contracted for the next two years to produce a academic paper and website identifying patterns that lead to open source projects becoming successful and falling out of favour. This data will be used by the foundation to prioritise projects within their target sectors that need support. 
 
 Charlie uses Libraries.io data to train a algorithms to identify patterns and uses the Libraries.io API to build an application that highlights popular projects and projects in decline.
