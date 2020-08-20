@@ -20,7 +20,7 @@ We do this by tackling three problems:
 Libraries.io is the place that we attempt to solve the discovery problem for users, we solve the other two at our parent company [Tidelift](https://tidelift.com). If you'd like to know why we think this is the right approach then check out [our strategy](/strategy.md).
 
 ### Who are Tidelift?
-In October 2017 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2018 and continue to support Libraries.io as part of their core philosophy and strategy.  
+In October 2017 Libraries.io maintainers Andrew Nesbitt and Benjamin Nickolls decided to join a new company focussed on building a sustainable future for open source software. Tidelift launched to the public in February 2018 and continue to support Libraries.io as part of their core philosophy and strategy.
 
 ## Who is Libraries.io For?
 
@@ -37,7 +37,7 @@ Libraries.io collects data about software and the frameworks, plugins and tools 
 
 Everything in Libraries.io begins with [package managers](/packagemanagers.md). On a regular basis, background tasks find new or updated libraries from each of those packages managers. Each library is stored as a project, alongside any data we can gleam from the package manager. If the package manager provides a link to a hosted revision control service like GitHub, then Libraries.io fetches yet more data from there.
 
-Using the collected data, we then calculate the [SourceRank](/overview#sourcerank), which is used to index the project in search results. Next, we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities, etc.
+Using the collected data, we highlight any issues regarding updates, deprecated versions, yanked or deleted libraries, license incompatibilities, etc.
 
 If you'd like an overview of the project, including a description of each of the repositories in the Libraries.io organisation and how they work together, then check out our [overview](/overview.md).
 

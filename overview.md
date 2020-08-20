@@ -8,14 +8,6 @@
 * [Diagram](#architecture)
 * [Components](#components)
 
-[SourceRank](#sourcerank)
-* [Code](#code)
-* [Community](#community)
-* [Distribution](#distribution)
-* [Documentation](#documentation)
-* [Usage](#usage)
-
-
 ### Package Managers
 Everything in Libraries.io begins with [package managers](/packagemanagers.md). On a regular basis, background tasks find new or updated libraries from each of those packages managers. Libraries cannot be added to the system unless they exist on one of those package managers.
 
@@ -114,52 +106,6 @@ The main bits are:
 * [Favicon](https://github.com/librariesio/favicon) Generates Libraries.io favicons for a given colour or language
 * [First PR Bot](https://github.com/librariesio/firstprbot) Tweets whenever someone opens their first open source pull request on GitHub
 * [Languages](https://github.com/librariesio/languages) Just the language names and colors from github-linguist
-
-## SourceRank
-SourceRank is the name for the algorithm that we use to index search results. The maximum score for SourceRank is currently around 30 points.
-
-Our analysis is broken down into:
-
-* [Code](#code)
-* [Community](#community)
-* [Distribution](#distribution)
-* [Documentation](#documentation)
-* [Usage](#usage)
-
-### Code
-
-* Does the project have any outdated dependencies? Tag: `any_outdated_dependencies, Score: `-2`
-
-### Community
-
-* How many 'stars' does the project have? Tag: `stars` Score: `+log(stars)/2`
-* How many contributors does the project have? Tag: `contributors` Score: `+log(contributors)/2`
-* How many 'subscribers' does the project have? Tag: `subscribers` Score: `+log(subscribers)/2`
-* Has there been an update within the last six months? Tag: `recently_pushed` Score: `+1`
-
-### Distribution
-
-* Is there a link to the source code? Tag: `repository_present` Score: `+1`
-* Does the project use versioning? Tag: `versions_present` Score: `+1`
-* Does every version use semantic versioning? Tag: `follows_semver` Score: `+1`
-* Has the project reached version 1.0.0 yet? Tag: `one_point_oh` Score: `+1`
-* Is the project more than six months old? Tag: `not_brand_new` Score: `+1`
-* Has the project had a release within the last six months? Tag: `recent_release` Score: `+1`
-* Are all published versions marked as 'pre-release' by the maintainer? Tag: `all_prereleases` Score: `-2`
-* Has the project been removed from the package manager? Tag: `is_removed` Score: `-5`
-
-### Documentation
-
-* Does the project have a readme file? Tag: `readme_present` Score: `+1`
-* Does the project have a valid license? Tag: `license_present` Score: `+1`
-* Does the project have a description, homepage, repository link or keywords? Tag: `basic_info_present` Score: `+1`
-* Is the project marked as deprecated by the owner? Tag: `is_deprecated' Score: `-5`
-* Is the project marked as unmaintained by the maintainer? Tag: is_unmaintained Score: `-5`
-
-### Usage
-
-* How many [Projects](#projects-versions-and-dependencies) are dependent on this project?  Tag: `dependent_projects` Score: `+log(dependent_projects)*2`
-* How many [Repositories](#repositories) are dependent on this project? Tag: `dependent_repositories` Score: `+log(dependent_repositories)`
 
 ## TODO
 
